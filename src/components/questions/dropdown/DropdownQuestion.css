@@ -1,0 +1,13 @@
+.Question {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--light-grey-color);
+}
+
+.Question .Title {
+    padding: 5px;
+    margin-bottom: 15px;
+}

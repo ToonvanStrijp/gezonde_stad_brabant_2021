@@ -1,0 +1,17 @@
+.Results {
+    border-radius: var(--border-radius);
+    background-color: var(--light-grey-color);
+}
+
+.Results .Title {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: white;
+}
+
+.Results .Title>h1 {
+    margin: 0px;
+    padding: 15px 0px;
+}

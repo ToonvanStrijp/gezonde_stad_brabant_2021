@@ -1,0 +1,17 @@
+.Questionnaire {
+    width: 720px;
+}
+
+.Questionnaire .Stepper {
+    margin-bottom: 20px;
+}
+
+.Questionnaire .Navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 16px;
+}
+
+.Questionnaire .Navigation .Continue-button {
+    background-color: #27ae60;
+}

@@ -1,0 +1,14 @@
+.Active>.Question {
+    position: relative;
+}
+
+.Active>.Question::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 8px solid var(--primary-color);
+}
