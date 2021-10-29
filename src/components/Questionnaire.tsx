@@ -1,73 +1,31 @@
-import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import StepLabel from "@mui/material/StepLabel";
-import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 import { useState } from "react";
 
 import "./Questionnaire.css";
-import DemographicStep from "../steppers/projectStepper/demographicStep/DemographicStep";
-import EconomicStep from "../steppers/projectStepper/economicStep/EconomicStep";
-
-const steps = ["Demografie", "Economie", "Veiligheid"];
 
 export default function Questionnare() {
-  const [activeStep, setActiveStep] = useState(0);
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const getStepContent = () => {
-    switch (activeStep) {
-      case 0: {
-        return <DemographicStep />;
-      }
-      case 1: {
-        return <EconomicStep />;
-      }
-    }
-  };
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
   return (
     <div className="Questionnaire">
-      <Stepper className="Stepper" activeStep={activeStep}>
-        {steps.map((label, index) => {
-          const stepProps: { completed?: boolean } = {};
-          const labelProps: {
-            optional?: React.ReactNode;
-          } = {};
-          return (
-            <Step key={label} {...stepProps}>
-              <StepLabel {...labelProps}>{label}</StepLabel>
-            </Step>
-          );
-        })}
-      </Stepper>
-      <div>
-        {getStepContent()}
-        <div className="Navigation">
-          <Button
-            className="Back-button"
-            disabled={activeStep === 0}
-            onClick={handleBack}
-            sx={{ mr: 1 }}
-          >
-            Vorige
-          </Button>
-          {activeStep !== steps.length - 1 && (
-            <Button
-              className="Continue-button"
-              variant="contained"
-              onClick={handleNext}
-            >
-              Volgende
-            </Button>
-          )}
-        </div>
+      <div className={currentQuestion === 0 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(0)}>
+        <span className="Title">Wat is de locatie van het project?</span>
+        <TextField label="Outlined" variant="outlined" />
+      </div>
+
+      <div className={currentQuestion === 1 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(1)}>
+        <span className="Title">Wat zijn de doelgroepen?</span>
+        <TextField label="Outlined" variant="outlined" />
+      </div>
+
+      <div className={currentQuestion === 2 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(2)}>
+        <span className="Title">Wat zijn de maatschappelijke doelen?</span>
+        <TextField label="Outlined" variant="outlined" />
+      </div>
+
+      <div className={currentQuestion === 3 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(3)}>
+        <span className="Title">Wat is de omschrijving van het project?</span>
+        <TextField multiline rows={4} label="Outlined" variant="outlined" />
       </div>
     </div>
   );

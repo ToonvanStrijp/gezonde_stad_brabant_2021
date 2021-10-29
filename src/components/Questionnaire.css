@@ -2,16 +2,36 @@
     width: 720px;
 }
 
-.Questionnaire .Stepper {
-    margin-bottom: 20px;
-}
-
-.Questionnaire .Navigation {
+.Questionnaire .Question {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    margin: 10px 16px;
+    flex-direction: column;
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--light-grey-color);
 }
 
-.Questionnaire .Navigation .Continue-button {
-    background-color: #27ae60;
+.Questionnaire .Question:first-of-type {
+    margin-top: 0px;
+}
+
+.Questionnaire .Question .Title {
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.Questionnaire .Active-question {
+    position: relative;
+}
+
+.Questionnaire .Active-question::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 8px solid var(--primary-color);
 }
