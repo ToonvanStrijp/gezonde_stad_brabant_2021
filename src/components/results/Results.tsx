@@ -33,7 +33,7 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
 
 
   const LoadingItems = () => {
-    return Array(5).fill('').map((value, index) => (
+    return Array(4).fill('').map((value, index) => (
       <Paper 
             className="Item"
             elevation={3}>

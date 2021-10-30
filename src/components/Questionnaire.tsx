@@ -25,7 +25,7 @@ const maatschappelijkeDoelen = [
 ]
 
 type QuestionnaireProps = {
-  setTags: (tags: string[]) => void;
+  setTags: React.Dispatch<string[]>;
 }
 
 const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
