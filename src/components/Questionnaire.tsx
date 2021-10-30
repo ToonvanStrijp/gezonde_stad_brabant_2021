@@ -1,8 +1,20 @@
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { useEffect, useRef, useState } from "react";
+import data from "../data/gemeenteAkkoord.json";
 
 import "./Questionnaire.css";
+import useDebounce from "./debounce";
+
+const tags = Array.from(data.reduce((set, category) => {
+  category.goals.reduce<string[]>((tags, goal) => {
+    tags.push(...goal.tags);
+    return tags;
+  }, []).forEach(tag => {
+    set.add(tag);
+  });
+  return set;
+}, new Set<string>()));
 
 const wijken = new Map<string, string[]>();
 
@@ -13,25 +25,25 @@ wijken.set("Binnenstad", [
   "denbosch",
   "stad",
 ]);
-wijken.set("De Groote Wielen", ["jongeren", "denbosch", "betrokken"]);
-wijken.set("Empel", ["jongeren", "denbosch", "betrokken"]);
+wijken.set("De Groote Wielen", ["jongeren", "denbosch"]);
+wijken.set("Empel", ["jongeren", "denbosch"]);
 wijken.set("Engelen", ["buurt", "activiteiten", "bewoner"]);
-wijken.set("Graafsepoort", ["jongeren", "denbosch", "betrokken"]);
-wijken.set("Maaspoort", ["burger", "denbosch", "betrokken"]);
-wijken.set("Muntel / Vliert", ["jongeren", "denbosch", "betrokken"]);
-wijken.set("Noord", ["jongeren", "vluchtelingen", "betrokken"]);
-wijken.set("Nuland", ["gemeente", "denbosch", "betrokken"]);
+wijken.set("Graafsepoort", ["jongeren", "denbosch"]);
+wijken.set("Maaspoort", ["burger", "denbosch"]);
+wijken.set("Muntel / Vliert", ["jongeren", "denbosch"]);
+wijken.set("Noord", ["jongeren", "vluchtelingen"]);
+wijken.set("Nuland", ["gemeente", "denbosch"]);
 wijken.set("Rosmalen Noord", ["jongeren", "denbosch", "nieuwkomer"]);
-wijken.set("Rosmalen Zuid", ["werk", "denbosch", "betrokken", "wonen"]);
-wijken.set("Vinkel", ["jongeren", "denbosch", "betrokken"]);
-wijken.set("West", ["eenzaamheid", "organisatie", "betrokken"]);
-wijken.set("Zuidoost", ["jongeren", "denbosch", "betrokken"]);
+wijken.set("Rosmalen Zuid", ["werk", "denbosch", "wonen"]);
+wijken.set("Vinkel", ["jongeren", "denbosch"]);
+wijken.set("West", ["eenzaamheid", "organisatie"]);
+wijken.set("Zuidoost", ["jongeren", "denbosch"]);
 
 const doelgroepen = new Map<string, string[]>();
 
-doelgroepen.set("Kinderen", ["kinderen", "vluchtelingen", "kind"]);
-doelgroepen.set("Jongeren", ["jongeren"]);
-doelgroepen.set("Studenten", ["studenten", "dugs", "studeren", "JADS"]);
+doelgroepen.set("Kinderen", ["kinderen", "kind"]);
+doelgroepen.set("Jongeren", ["jongeren", "geld", "schuld", "studeren"]);
+doelgroepen.set("Studenten", ["studenten", "dugs", "studeren", "JADS", "geld", "studieschuld"]);
 doelgroepen.set("Volwassenen", ["volwassenen", "werk"]);
 doelgroepen.set("Ouderen", ["ouderen", "mobiel", "vervoer"]);
 
@@ -120,6 +132,8 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
   const [selectedWijk, setSelectedWijk] = useState<string>('');
   const [selectedDoelgroepen, setSelectedDoelgroepen] = useState<string[]>([]);
   const [selectedMaatschappelijkeDoelen, setSelectedMaatschappelijkeDoelen] = useState<string[]>([]);
+  const [description, setDescription] = useState('');
+  const debouncedSearchTerm = useDebounce(description, 500);
 
   useEffect(() => {
 
@@ -135,8 +149,11 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
       return r;
     }, []);
 
-    setTags([...wijkenTags, ...doelgroepenTags, ...maatschappelijkeTags]);
-  }, [selectedDoelgroepen, selectedWijk, selectedMaatschappelijkeDoelen])
+    
+    const extraTags = tags.filter(tag => debouncedSearchTerm.indexOf(tag) !== -1);
+
+    setTags([...wijkenTags, ...doelgroepenTags, ...maatschappelijkeTags, ...extraTags]);
+  }, [selectedDoelgroepen, selectedWijk, selectedMaatschappelijkeDoelen, debouncedSearchTerm]);
 
   const questions = [
     <>
@@ -178,7 +195,9 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
     </>,
     <>
       <span className="Title">Omschrijving van het project?</span>
-      <TextField multiline rows={4} variant="outlined" />
+      <TextField multiline rows={4} value={description} onChange={(event) => {
+        setDescription(event.target.value)
+      }} variant="outlined" />
     </>,
   ];
 
