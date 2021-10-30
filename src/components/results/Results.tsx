@@ -7,11 +7,11 @@ import { Goal } from "../../models/goal";
 import LinearProgress from '@mui/material/LinearProgress';
 import { useEffect, useState } from "react";
 
-type GoalExtended = Goal & { color: string, category: Category };
+type GoalExtended = Goal & { color: string, category: Category, score: number };
 
 const categories: Category[] = data;
 const goals: GoalExtended[] = categories.reduce<GoalExtended[]>((result, category) => {
-  const data = category.goals.map(g => ({...g, color: category.color, category}));
+  const data = category.goals.map(g => ({...g, color: category.color, category, score: 0}));
   result.push(...data);
   return result;
 }, [])
@@ -27,17 +27,26 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
     if(tags.length <= 0) return;
     setLoading(true);
     setTimeout(() => {
-      
+      goals.map(goal => {
+        const score = goal.tags.reduce((s, t) => {
+          if(tags.indexOf(t) !== -1) {
+            s++;
+          }
+          return s;
+        }, 0);
+        goal.score = score;
+      });
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, [tags, setLoading])
 
   const LoadingItems = () => {
     return Array(4).fill('').map((value, index) => (
       <Paper 
+            key={index}
             className="Item"
             elevation={3}>
-        <Box key={index} sx={{ width: 300 }}>
+        <Box sx={{ width: 300 }}>
           <Skeleton sx={{width: 100}} />
           <Skeleton />
           <Skeleton />
@@ -61,14 +70,19 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
           </div>
         )}
         {loading && LoadingItems()}
-        {!loading && goals.map(goal => 
+        {!loading && goals.sort((a, b) => b.score - a.score).map((goal, index) => 
           (<Paper 
+            key={index}
             className="Item"
             elevation={3}>
               <Typography variant="h5">{goal.category.title}</Typography>
               {goal.description}
-              <br/>
-              {goal.tags.map((tag, index) => (<Chip key={index} label={tag} style={{marginTop: '10px', color: 'white', marginLeft: '5px', backgroundColor: goal.color}} />))}
+              {tags.length > 0 && (
+                <>
+                  <br/>
+                  {goal.tags.map((tag, index) => (<Chip key={index} className={tags.indexOf(tag) === -1 ? 'Chip Opacity' : 'Chip'} label={tag} style={{marginTop: '10px', color: 'white', marginLeft: '5px', backgroundColor: goal.color}} />))}
+                </>
+              )}
           </Paper>)
         )}
       </div>

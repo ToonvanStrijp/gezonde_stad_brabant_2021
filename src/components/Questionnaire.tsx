@@ -29,11 +29,11 @@ wijken.set("Zuidoost", ["jongeren", "denbosch", "betrokken"]);
 
 const doelgroepen = new Map<string, string[]>();
 
-doelgroepen.set("Kinderen", ["kinderen"]);
+doelgroepen.set("Kinderen", ["kinderen", "vluchtelingen", "kind"]);
 doelgroepen.set("Jongeren", ["jongeren"]);
-doelgroepen.set("Studenten", ["studenten"]);
-doelgroepen.set("Volwassenen", ["volwassenen"]);
-doelgroepen.set("Ouderen", ["oudereen"]);
+doelgroepen.set("Studenten", ["studenten", "dugs", "studeren", "JADS"]);
+doelgroepen.set("Volwassenen", ["volwassenen", "werk"]);
+doelgroepen.set("Ouderen", ["ouderen", "mobiel", "vervoer"]);
 
 const maatschappelijkeDoelen = new Map<string, string[]>();
 
@@ -117,8 +117,26 @@ type QuestionnaireProps = {
 
 const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedWijk, setSelectedWijk] = useState("");
-  const previousSelectedWijk = usePrevious(selectedWijk);
+  const [selectedWijk, setSelectedWijk] = useState<string>('');
+  const [selectedDoelgroepen, setSelectedDoelgroepen] = useState<string[]>([]);
+  const [selectedMaatschappelijkeDoelen, setSelectedMaatschappelijkeDoelen] = useState<string[]>([]);
+
+  useEffect(() => {
+
+    const wijkenTags = Array.from(wijken.get(selectedWijk ?? '')?.values() ?? []);
+
+    const doelgroepenTags = selectedDoelgroepen.reduce<string[]>((r, v) => {
+      r.push(...Array.from(doelgroepen.get(v)?.values() ?? []));
+      return r;
+    }, []);
+
+    const maatschappelijkeTags = selectedMaatschappelijkeDoelen.reduce<string[]>((r, v) => {
+      r.push(...Array.from(maatschappelijkeDoelen.get(v)?.values() ?? []));
+      return r;
+    }, []);
+
+    setTags([...wijkenTags, ...doelgroepenTags, ...maatschappelijkeTags]);
+  }, [selectedDoelgroepen, selectedWijk, selectedMaatschappelijkeDoelen])
 
   const questions = [
     <>
@@ -127,7 +145,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
         options={Array.from(wijken.keys())}
         value={selectedWijk}
         onChange={(event: any, newValue: string | null) => {
-          if (newValue !== null) setSelectedWijk(newValue);
+          setSelectedWijk(newValue ?? '');
         }}
         renderInput={(params) => <TextField {...params} label="Wijk" />}
       />
@@ -137,7 +155,11 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
       <Autocomplete
         multiple
         options={Array.from(doelgroepen.keys())}
+        value={selectedDoelgroepen}
         renderInput={(params) => <TextField {...params} label="Doelgroepen" />}
+        onChange={(event, value) => {
+          setSelectedDoelgroepen(value);
+        }}
       />
     </>,
     <>
@@ -145,45 +167,27 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
       <Autocomplete
         multiple
         options={Array.from(maatschappelijkeDoelen.keys())}
+        value={selectedMaatschappelijkeDoelen}
         renderInput={(params) => (
           <TextField {...params} label="Maatschappelijke doelen" />
         )}
+        onChange={(event, value) => {
+          setSelectedMaatschappelijkeDoelen(value);
+        }}
       />
     </>,
     <>
-      <span className="Title">Wat is de omschrijving van het project?</span>
-      <TextField multiline rows={4} label="Outlined" variant="outlined" />
+      <span className="Title">Omschrijving van het project?</span>
+      <TextField multiline rows={4} variant="outlined" />
     </>,
   ];
-
-  function usePrevious(value: any) {
-    const ref = useRef("");
-    useEffect(() => {
-      ref.current = value;
-    });
-    return ref.current;
-  }
-
-  useEffect(() => {
-    if (selectedWijk !== previousSelectedWijk) {
-      setTags((t) => {
-        Array.from(wijken.get(previousSelectedWijk)?.values() ?? []).forEach(
-          (pt) => {
-            const index = t.indexOf(pt);
-            if (index !== -1) t.splice(index, 1);
-          }
-        );
-
-        return [...t, ...Array.from(wijken.get(selectedWijk)?.values() ?? [])];
-      });
-    }
-  }, [selectedWijk]);
 
   return (
     <div className="Questionnaire">
       {questions.map((q, i) => {
         return (
           <div
+            key={i}
             className={
               currentQuestion === i ? "Question Active-question" : "Question"
             }

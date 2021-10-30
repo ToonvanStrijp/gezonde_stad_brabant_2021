@@ -37,3 +37,15 @@
     margin-right: auto;
     padding: 20px;
 }
+
+.Results .Item .Opacity {
+    opacity: 0.2;
+}
+
+.Results .Item .Chip {
+    cursor: pointer;
+}
+
+.Results .Item .Chip:hover.Opacity {
+    opacity: 1;
+}
