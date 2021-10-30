@@ -1,8 +1,15 @@
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+import data from "../data/gemeenteAkkoord.json";
 
 import "./Questionnaire.css";
+
+const tags = new Map<string, number>();
+
+// Mapping the data to a map of <tag, importance>
+data.map((d) => d.goals.map((g) => g.tags.map((t) => tags.set(t, 0))));
 
 const wijken = [
   "Binnenstad", "De Groote Wielen", "Empel", "Engelen", "Graafsepoort", "Maaspoort", "Muntel / Vliert", "Noord", "Nuland", "Rosmalen Noord", "Rosmalen Zuid", "Vinkel", "West", "Zuidoost"
@@ -18,6 +25,41 @@ const maatschappelijkeDoelen = [
 
 export default function Questionnare() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedWijk, setSelectedWijk] = useState("");
+  const previousSelectedWijk = usePrevious(selectedWijk);
+
+  function usePrevious(value: any) {
+    const ref = useRef("");
+    useEffect(() => {
+      ref.current = value;
+    });
+    return ref.current;
+  }
+
+  useEffect(() => {
+    // The first time we select a wijk we only want to increase the count
+    if(selectedWijk === "")
+    {
+      const value = tags.get(selectedWijk.toLowerCase());
+
+      if(value !== undefined)
+        tags.set(selectedWijk.toLowerCase(), value + 1);
+    }
+    else
+    {
+      const previousValue = tags.get(previousSelectedWijk.toLowerCase());
+      const value = tags.get(selectedWijk.toLowerCase());
+
+      if(previousValue !== undefined)
+        tags.set(previousSelectedWijk.toLowerCase(), previousValue -1);
+
+      if(value !== undefined)
+        tags.set(selectedWijk.toLowerCase(), value + 1);
+    }
+    
+    // Otherwise we want to decrease the count for the previous wijk and increase it for the current
+    console.log(previousSelectedWijk, selectedWijk  );
+  }, [selectedWijk])
 
   return (
     <div className="Questionnaire">
@@ -25,6 +67,12 @@ export default function Questionnare() {
         <span className="Title">Wat is de locatie van het project?</span>
         <Autocomplete
             options={wijken}
+            value={selectedWijk}
+            onChange={(event: any, newValue: string | null) => 
+            {
+              if(newValue !== null)
+                setSelectedWijk(newValue);
+            }}
             renderInput={(params) => (
               <TextField
                 {...params}
