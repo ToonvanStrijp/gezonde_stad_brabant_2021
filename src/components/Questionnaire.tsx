@@ -12,6 +12,10 @@ const doelgroepen = [
   "Kinderen", "Jongeren", "Adolescente", "Volwassenen", "Bejaarden", "Ouderen", 
 ]
 
+const maatschappelijkeDoelen = [
+  "Economie en arbeidsmarkt", "Talentontwikkeling", "Sociale kwaliteit", "Gezondheid en vitaliteit", "Cultuur en sport", "Energie & klimaatadaptie", "Leven en wonen", "Verkeer en mobiliteit", "Openbare orde en veiligheid", "Partnership voor doelen", "Financiën"
+]
+
 export default function Questionnare() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -46,7 +50,16 @@ export default function Questionnare() {
 
       <div className={currentQuestion === 2 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(2)}>
         <span className="Title">Wat zijn de maatschappelijke doelen?</span>
-        <TextField label="Outlined" variant="outlined" />
+        <Autocomplete
+          multiple
+            options={maatschappelijkeDoelen}
+            renderInput={(params) => (
+              <TextField
+                {...params}
+                label="Maatschappelijke doelen"
+              />
+            )}
+          />
       </div>
 
       <div className={currentQuestion === 3 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(3)}>
