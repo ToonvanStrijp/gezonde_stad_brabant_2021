@@ -2,8 +2,6 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { useEffect, useRef, useState } from "react";
 
-import Button from "@mui/material/Button";
-
 import "./Questionnaire.css";
 
 const wijken = new Map<string, string[]>();
@@ -193,10 +191,6 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
           </div>
         );
       })}
-
-      <Button onClick={() => {}} variant="contained">
-        set tags
-      </Button>
     </div>
   );
 };

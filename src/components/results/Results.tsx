@@ -32,7 +32,6 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
     }, 2000);
   }, [tags, setLoading])
 
-
   const LoadingItems = () => {
     return Array(4).fill('').map((value, index) => (
       <Paper 
@@ -55,6 +54,12 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
         {loading && (<LinearProgress className="Progress" />)}
       </div>
       <div style={{paddingLeft: '20px', paddingRight: '20px'}}>
+        {tags.length > 0 && (
+          <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
+          <div style={{marginTop: '10px'}}>tags: </div>
+          {tags.map((tag, index) => (<Chip key={index} label={tag} style={{marginTop: '10px', color: 'black', marginLeft: '5px'}} />))}
+          </div>
+        )}
         {loading && LoadingItems()}
         {!loading && goals.map(goal => 
           (<Paper 
@@ -63,7 +68,7 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
               <Typography variant="h5">{goal.category.title}</Typography>
               {goal.description}
               <br/>
-              {goal.tags.map(tag => (<Chip label={tag} style={{marginTop: '10px', color: 'white', marginLeft: '5px', backgroundColor: goal.color}} />))}
+              {goal.tags.map((tag, index) => (<Chip key={index} label={tag} style={{marginTop: '10px', color: 'white', marginLeft: '5px', backgroundColor: goal.color}} />))}
           </Paper>)
         )}
       </div>
