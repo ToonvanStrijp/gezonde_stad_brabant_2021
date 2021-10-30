@@ -171,8 +171,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
         if (index !== -1) {
           return [...t.splice(index, 1)];
         }
-        t.push(selectedWijk);
-        return [...t];
+        return [...t, ...Array.from(wijken.get(selectedWijk)?.values() ?? [])];
       });
     }
   }, [selectedWijk]);
