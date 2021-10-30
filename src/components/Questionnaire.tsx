@@ -1,7 +1,12 @@
 import TextField from "@mui/material/TextField";
+import Autocomplete from "@mui/material/Autocomplete";
 import { useState } from "react";
 
 import "./Questionnaire.css";
+
+const wijken = [
+  "Binnenstad", "De Groote Wielen", "Empel", "Engelen", "Graafsepoort", "Maaspoort", "Muntel / Vliert", "Noord", "Nuland", "Rosmalen Noord", "Rosmalen Zuid", "Vinkel", "West", "Zuidoost"
+]
 
 export default function Questionnare() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -10,7 +15,15 @@ export default function Questionnare() {
     <div className="Questionnaire">
       <div className={currentQuestion === 0 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(0)}>
         <span className="Title">Wat is de locatie van het project?</span>
-        <TextField label="Outlined" variant="outlined" />
+        <Autocomplete
+            options={wijken}
+            renderInput={(params) => (
+              <TextField
+                {...params}
+                label="Wijk"
+              />
+            )}
+          />
       </div>
 
       <div className={currentQuestion === 1 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(1)}>
