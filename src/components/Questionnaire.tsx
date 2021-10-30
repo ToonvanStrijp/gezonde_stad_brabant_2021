@@ -2,36 +2,123 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { useEffect, useRef, useState } from "react";
 
-import data from "../data/gemeenteAkkoord.json";
-import Button from '@mui/material/Button';
-
 import "./Questionnaire.css";
 
-const tags = new Map<string, number>();
+const wijken = new Map<string, string[]>();
 
-// Mapping the data to a map of <tag, importance>
-data.map((d) => d.goals.map((g) => g.tags.map((t) => tags.set(t, 0))));
+wijken.set("Binnenstad", [
+  "centrum",
+  "wijk",
+  "hertogenbosch",
+  "denbosch",
+  "stad",
+]);
+wijken.set("De Groote Wielen", ["jongeren", "denbosch", "betrokken"]);
+wijken.set("Empel", ["jongeren", "denbosch", "betrokken"]);
+wijken.set("Engelen", ["buurt", "activiteiten", "bewoner"]);
+wijken.set("Graafsepoort", ["jongeren", "denbosch", "betrokken"]);
+wijken.set("Maaspoort", ["burger", "denbosch", "betrokken"]);
+wijken.set("Muntel / Vliert", ["jongeren", "denbosch", "betrokken"]);
+wijken.set("Noord", ["jongeren", "vluchtelingen", "betrokken"]);
+wijken.set("Nuland", ["gemeente", "denbosch", "betrokken"]);
+wijken.set("Rosmalen Noord", ["jongeren", "denbosch", "nieuwkomer"]);
+wijken.set("Rosmalen Zuid", ["werk", "denbosch", "betrokken", "wonen"]);
+wijken.set("Vinkel", ["jongeren", "denbosch", "betrokken"]);
+wijken.set("West", ["eenzaamheid", "organisatie", "betrokken"]);
+wijken.set("Zuidoost", ["jongeren", "denbosch", "betrokken"]);
 
-const wijken = [
-  "Binnenstad", "De Groote Wielen", "Empel", "Engelen", "Graafsepoort", "Maaspoort", "Muntel / Vliert", "Noord", "Nuland", "Rosmalen Noord", "Rosmalen Zuid", "Vinkel", "West", "Zuidoost"
-]
+const doelgroepen = new Map<string, string[]>();
 
-const doelgroepen = [
-  "Kinderen", "Jongeren", "Studenten", "Volwassenen", "Ouderen", 
-]
+doelgroepen.set("Kinderen", ["kinderen"]);
+doelgroepen.set("Jongeren", ["jongeren"]);
+doelgroepen.set("Studenten", ["studenten"]);
+doelgroepen.set("Volwassenen", ["volwassenen"]);
+doelgroepen.set("Ouderen", ["oudereen"]);
 
-const maatschappelijkeDoelen = [
-  "Economie en arbeidsmarkt", "Talentontwikkeling", "Sociale kwaliteit", "Gezondheid en vitaliteit", "Cultuur en sport", "Energie & klimaatadaptie", "Leven en wonen", "Verkeer en mobiliteit", "Openbare orde en veiligheid", "Partnership voor doelen", "Financiën"
-]
+const maatschappelijkeDoelen = new Map<string, string[]>();
+
+maatschappelijkeDoelen.set("Economie en arbeidsmarkt", [
+  "economie",
+  "begroting",
+  "milieueducatie",
+  "financiën",
+]);
+maatschappelijkeDoelen.set("Talentontwikkeling", [
+  "onderwijs",
+  "educatieve",
+  "innovatie",
+  "campus",
+]);
+maatschappelijkeDoelen.set("Sociale kwaliteit", [
+  "studenten",
+  "sociaal",
+  "zorgketen",
+  "zorg",
+  "initiatieven",
+]);
+maatschappelijkeDoelen.set("Gezondheid en vitaliteit", [
+  "positief",
+  "focus",
+  "gezondheid",
+]);
+maatschappelijkeDoelen.set("Cultuur en sport", [
+  "bouw",
+  "theater",
+  "parade",
+  "bibliotheek",
+  "culturele",
+]);
+maatschappelijkeDoelen.set("Energie & klimaatadaptie", [
+  "toekomst",
+  "proeftuin",
+  "klimaat",
+  "neutraal",
+]);
+maatschappelijkeDoelen.set("Leven en wonen", [
+  "centrum",
+  "wonen",
+  "historisch",
+  "nieuw",
+]);
+maatschappelijkeDoelen.set("Verkeer en mobiliteit", [
+  "autoluwe",
+  "milieu",
+  "garage",
+  "parkeren",
+]);
+maatschappelijkeDoelen.set("Openbare orde en veiligheid", [
+  "veiligheid",
+  "ouderen",
+  "gevoel",
+  "wijk",
+  "wijkfoto",
+  "taskforce",
+]);
+maatschappelijkeDoelen.set("Partnership voor doelen", [
+  "burgerbegroting",
+  "inwoner",
+  "G1000",
+  "right",
+  "challenge",
+  "grenzen",
+  "centrum",
+]);
+maatschappelijkeDoelen.set("Financiën", [
+  "begroting",
+  "financieel",
+  "gemeente",
+  "reserve",
+  "woonlasten",
+]);
 
 type QuestionnaireProps = {
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
-}
+};
 
-const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
+const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedWijk, setSelectedWijk] = useState("");
-  const previousSelectedWijk = usePrevious(selectedWijk);
+  const previousSelectedWijk = usePrevious("");
 
   function usePrevious(value: any) {
     const ref = useRef("");
@@ -42,91 +129,80 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
   }
 
   useEffect(() => {
-    // The first time we select a wijk we only want to increase the count
-    if(selectedWijk === "")
-    {
-      const value = tags.get(selectedWijk.toLowerCase());
-
-      if(value !== undefined)
-        tags.set(selectedWijk.toLowerCase(), value + 1);
+    if (selectedWijk !== previousSelectedWijk) {
+      setTags((t) => {
+        const index = t.indexOf(previousSelectedWijk);
+        if (index !== -1) {
+          t.splice(index, 1);
+        }
+        t.push(selectedWijk);
+        return t;
+      });
     }
-    else
-    {
-      const previousValue = tags.get(previousSelectedWijk.toLowerCase());
-      const value = tags.get(selectedWijk.toLowerCase());
-
-      if(previousValue !== undefined)
-        tags.set(previousSelectedWijk.toLowerCase(), previousValue -1);
-
-      if(value !== undefined)
-        tags.set(selectedWijk.toLowerCase(), value + 1);
-    }
-    
-    // Otherwise we want to decrease the count for the previous wijk and increase it for the current
-    console.log(previousSelectedWijk, selectedWijk  );
-  }, [selectedWijk])
+  }, [selectedWijk]);
 
   return (
     <div className="Questionnaire">
-      <div className={currentQuestion === 0 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(0)}>
+      <div
+        className={
+          currentQuestion === 0 ? "Question Active-question" : "Question"
+        }
+        onFocus={() => setCurrentQuestion(0)}
+      >
         <span className="Title">Wat is de locatie van het project?</span>
         <Autocomplete
-            options={wijken}
-            value={selectedWijk}
-            onChange={(event: any, newValue: string | null) => 
-            {
-              if(newValue !== null)
-                setSelectedWijk(newValue);
-            }}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Wijk"
-              />
-            )}
-          />
+          options={Array.from(wijken.keys())}
+          value={selectedWijk}
+          onChange={(event: any, newValue: string | null) => {
+            if (newValue !== null) setSelectedWijk(newValue);
+          }}
+          renderInput={(params) => <TextField {...params} label="Wijk" />}
+        />
       </div>
 
-      <div className={currentQuestion === 1 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(1)}>
+      <div
+        className={
+          currentQuestion === 1 ? "Question Active-question" : "Question"
+        }
+        onFocus={() => setCurrentQuestion(1)}
+      >
         <span className="Title">Wat zijn de doelgroepen?</span>
         <Autocomplete
           multiple
-            options={doelgroepen}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Doelgroepen"
-              />
-            )}
-          />
+          options={Array.from(doelgroepen.keys())}
+          renderInput={(params) => (
+            <TextField {...params} label="Doelgroepen" />
+          )}
+        />
       </div>
 
-      <div className={currentQuestion === 2 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(2)}>
+      <div
+        className={
+          currentQuestion === 2 ? "Question Active-question" : "Question"
+        }
+        onFocus={() => setCurrentQuestion(2)}
+      >
         <span className="Title">Wat zijn de maatschappelijke doelen?</span>
         <Autocomplete
           multiple
-            options={maatschappelijkeDoelen}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Maatschappelijke doelen"
-              />
-            )}
-          />
+          options={Array.from(maatschappelijkeDoelen.keys())}
+          renderInput={(params) => (
+            <TextField {...params} label="Maatschappelijke doelen" />
+          )}
+        />
       </div>
 
-      <div className={currentQuestion === 3 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(3)}>
+      <div
+        className={
+          currentQuestion === 3 ? "Question Active-question" : "Question"
+        }
+        onFocus={() => setCurrentQuestion(3)}
+      >
         <span className="Title">Wat is de omschrijving van het project?</span>
         <TextField multiline rows={4} label="Outlined" variant="outlined" />
       </div>
-
-      <Button onClick={() => {
-        setTags(tags => {
-          return [...tags, "zorg"];
-        });
-      }} variant="contained">set tags</Button>
     </div>
   );
-}
+};
 
 export default Questionnaire;
