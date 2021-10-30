@@ -1,6 +1,8 @@
 .Results {
     border-radius: var(--border-radius);
     background-color: var(--light-grey-color);
+    height: 100vh;
+    overflow: auto;
 }
 
 .Results .Title {
@@ -9,6 +11,8 @@
     background-color: var(--secondary-color);
     text-align: center;
     color: white;
+    position: sticky;
+    top: 0px;
 }
 
 .Results .Title>h1 {
