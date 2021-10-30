@@ -118,7 +118,7 @@ type QuestionnaireProps = {
 const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedWijk, setSelectedWijk] = useState("");
-  const previousSelectedWijk = usePrevious("");
+  const previousSelectedWijk = usePrevious(selectedWijk);
 
   const questions = [
     <>
@@ -167,10 +167,13 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
   useEffect(() => {
     if (selectedWijk !== previousSelectedWijk) {
       setTags((t) => {
-        const index = t.indexOf(previousSelectedWijk);
-        if (index !== -1) {
-          return [...t.splice(index, 1)];
-        }
+        Array.from(wijken.get(previousSelectedWijk)?.values() ?? []).forEach(
+          (pt) => {
+            const index = t.indexOf(pt);
+            if (index !== -1) t.splice(index, 1);
+          }
+        );
+
         return [...t, ...Array.from(wijken.get(selectedWijk)?.values() ?? [])];
       });
     }
