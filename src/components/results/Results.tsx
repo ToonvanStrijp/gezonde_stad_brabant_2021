@@ -70,7 +70,7 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
           </div>
         )}
         {loading && LoadingItems()}
-        {!loading && goals.sort((a, b) => b.score - a.score).map((goal, index) => 
+        {!loading && tags.length > 0 && goals.sort((a, b) => b.score - a.score).map((goal, index) => 
           (<Paper 
             key={index}
             className="Item"
