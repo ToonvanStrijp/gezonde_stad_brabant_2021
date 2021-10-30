@@ -120,6 +120,42 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
   const [selectedWijk, setSelectedWijk] = useState("");
   const previousSelectedWijk = usePrevious("");
 
+  const questions = [
+    <>
+      <span className="Title">Wat is de locatie van het project?</span>
+      <Autocomplete
+        options={Array.from(wijken.keys())}
+        value={selectedWijk}
+        onChange={(event: any, newValue: string | null) => {
+          if (newValue !== null) setSelectedWijk(newValue);
+        }}
+        renderInput={(params) => <TextField {...params} label="Wijk" />}
+      />
+    </>,
+    <>
+      <span className="Title">Wat zijn de doelgroepen?</span>
+      <Autocomplete
+        multiple
+        options={Array.from(doelgroepen.keys())}
+        renderInput={(params) => <TextField {...params} label="Doelgroepen" />}
+      />
+    </>,
+    <>
+      <span className="Title">Wat zijn de maatschappelijke doelen?</span>
+      <Autocomplete
+        multiple
+        options={Array.from(maatschappelijkeDoelen.keys())}
+        renderInput={(params) => (
+          <TextField {...params} label="Maatschappelijke doelen" />
+        )}
+      />
+    </>,
+    <>
+      <span className="Title">Wat is de omschrijving van het project?</span>
+      <TextField multiline rows={4} label="Outlined" variant="outlined" />
+    </>,
+  ];
+
   function usePrevious(value: any) {
     const ref = useRef("");
     useEffect(() => {
@@ -143,64 +179,18 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
 
   return (
     <div className="Questionnaire">
-      <div
-        className={
-          currentQuestion === 0 ? "Question Active-question" : "Question"
-        }
-        onFocus={() => setCurrentQuestion(0)}
-      >
-        <span className="Title">Wat is de locatie van het project?</span>
-        <Autocomplete
-          options={Array.from(wijken.keys())}
-          value={selectedWijk}
-          onChange={(event: any, newValue: string | null) => {
-            if (newValue !== null) setSelectedWijk(newValue);
-          }}
-          renderInput={(params) => <TextField {...params} label="Wijk" />}
-        />
-      </div>
-
-      <div
-        className={
-          currentQuestion === 1 ? "Question Active-question" : "Question"
-        }
-        onFocus={() => setCurrentQuestion(1)}
-      >
-        <span className="Title">Wat zijn de doelgroepen?</span>
-        <Autocomplete
-          multiple
-          options={Array.from(doelgroepen.keys())}
-          renderInput={(params) => (
-            <TextField {...params} label="Doelgroepen" />
-          )}
-        />
-      </div>
-
-      <div
-        className={
-          currentQuestion === 2 ? "Question Active-question" : "Question"
-        }
-        onFocus={() => setCurrentQuestion(2)}
-      >
-        <span className="Title">Wat zijn de maatschappelijke doelen?</span>
-        <Autocomplete
-          multiple
-          options={Array.from(maatschappelijkeDoelen.keys())}
-          renderInput={(params) => (
-            <TextField {...params} label="Maatschappelijke doelen" />
-          )}
-        />
-      </div>
-
-      <div
-        className={
-          currentQuestion === 3 ? "Question Active-question" : "Question"
-        }
-        onFocus={() => setCurrentQuestion(3)}
-      >
-        <span className="Title">Wat is de omschrijving van het project?</span>
-        <TextField multiline rows={4} label="Outlined" variant="outlined" />
-      </div>
+      {questions.map((q, i) => {
+        return (
+          <div
+            className={
+              currentQuestion === i ? "Question Active-question" : "Question"
+            }
+            onFocus={() => setCurrentQuestion(i)}
+          >
+            {q}
+          </div>
+        );
+      })}
     </div>
   );
 };
