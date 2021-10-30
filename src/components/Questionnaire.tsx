@@ -9,7 +9,7 @@ const wijken = [
 ]
 
 const doelgroepen = [
-  "Kinderen", "Jongeren", "Adolescente", "Volwassenen", "Bejaarden", "Ouderen", 
+  "Kinderen", "Jongeren", "Studenten", "Volwassenen", "Ouderen", 
 ]
 
 const maatschappelijkeDoelen = [

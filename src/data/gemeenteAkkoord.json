@@ -1,1344 +1,1359 @@
-[
-    {
-       "id":1,
-       "title":"Economie en arbeidsmarkt",
-       "description":"Een sterke economie die voor banen zorgt, nu en in de toekomst",
-       "color": "#e76c6c",
-       "goals":[
-          {
-             "description":"Gerichte acquisitie en voldoende beschikbare, bij de vraag passende werknemers. Een gerichte vorm van acquisitie is nodig vanwege de beperkte ruimte op beschikbare bedrijfsgronden. We ondersteunen bedrijven met het oplossen van bijvoorbeeld logistieke knelpunten.",
-             "tags":[
-                "werknemer",
-                "werk",
-                "bedrijf"
-             ]
-          },
-          {
-             "description":"De ontwikkeling van Heesch West tot een nieuw duurzaam bedrijfsterrein.",
-             "tags":[
-                "heesch",
-                "west",
-                "duurzaam",
-                "bedrijf"
-             ]
-          },
-          {
-             "description":"Het aantrekkelijk houden van de brede binnenstad (historisch centrum en Spoorzone). Samen met ondernemers, instellingen en bewoners zorgen we ervoor dat dit de economische motor van onze gemeente blijft. Ook de voltooiing van het nieuwe centrum in Rosmalen krijgt onze aandacht.",
-             "tags":[
-                "binnenstad",
-                "centrum",
-                "spoorzone",
-                "bewoners",
-                "ondernemer",
-                "instelling",
-                "economisch",
-                "rosmalen"
-             ]
-          },
-          {
-             "description":"Het stimuleren van startende ondernemers zodat zij stabiel kunnen groeien. Dit zorgt bovendien voor meer werkgelegenheid. De inzet hiervoor via Ondernemerslift+, de Jamfabriek en Grasso zetten we voort.",
-             "tags":[
-                "startende",
-                "ondernemer",
-                "groeien",
-                "werk",
-                "werkgelegenheid",
-                "ondernemerslift",
-                "jamfabriek",
-                "grasso"
-             ]
-          },
-          {
-             "description":"Innovatie binnen het bedrijfsleven. Als gemeente stimuleren en ondersteunen we dit waar mogelijk. De bestaande campussen zijn bij uitstek de plekken waar die innovatie van de grond kan komen. Dit vanwege de koppeling met het onderwijs.",
-             "tags":[
-                "innovatie",
-                "bedrijf",
-                "gemeente",
-                "campus",
-                "onderwijs"
-             ]
-          },
-          {
-             "description":"Een bereikbare arbeidsmarkt voor iedereen. We versterken de samenwerking tussen Weener XL en het bedrijfsleven. En bieden mensen met afstand tot de arbeidsmarkt zo meer kansen op werk.",
-             "tags":[
-                "arbeidsmarkt",
-                "weener",
-                "bedrijfsleven",
-                "bedrijf",
-                "mensen",
-                "werk"
-             ]
-          },
-          {
-             "description":"Het verbeteren van de aansluiting tussen onderwijs en arbeidsmarkt door uitvoering van het regionaal Scholingsakkoord. We richten ons vooral op de sectoren techniek, ICT en zorg. Dit met als doel het aantal studenten in deze sectoren te verdubbelen. We werken hiervoor samen met onderwijsinstellingen en het bedrijfsleven.",
-             "tags":[
-                "onderwijs",
-                "arbeidsmarkt",
-                "scholingsakkoord",
-                "studenten",
-                "techniek",
-                "ICT",
-                "zorg"
-             ]
-          },
-          {
-             "description":"Het aanjagen van vernieuwende initiatieven op het gebied van toerisme en vrijetijdseconomie. We zien veel kansen om hiermee het toerisme binnen onze gemeente te versterken.",
-             "tags":[
-                "innovatie",
-                "toerisme",
-                "vrijetijdseconomie"
-             ]
-          },
-          {
-             "description":"Actieve lobby. Dit doen we om meer gebruik te maken van de ruimte die Europese (economische) fondsen bieden. En om in te kunnen spelen op relevante provinciale en (inter)nationale ontwikkelingen. We breiden de lobby capaciteit hiervoor uit.",
-             "tags":[
-                "ruimte",
-                "europa",
-                "economisch"
-             ]
-          },
-          {
-             "description":"Mogelijke uitbreiding van het maximum aantal dagen waarop verruimde openings- en sluitingstijden voor de horeca zijn toegestaan. En de eventuele verruiming van het aantal nachtzaken. We betrekken horeca, politie, bewoners, bezoekers en jongerenambassadeurs hierbij.",
-             "tags":[
-                "horeca",
-                "tijden",
-                "nachtzaken",
-                "politie",
-                "bewoners",
-                "bezoekers",
-                "jongerenambassadeurs"
-             ]
-          }
-       ]
+[{
+        "id": 1,
+        "title": "Economie en arbeidsmarkt",
+        "description": "Een sterke economie die voor banen zorgt, nu en in de toekomst",
+        "color": "#e76c6c",
+        "goals": [{
+                "description": "Gerichte acquisitie en voldoende beschikbare, bij de vraag passende werknemers. Een gerichte vorm van acquisitie is nodig vanwege de beperkte ruimte op beschikbare bedrijfsgronden. We ondersteunen bedrijven met het oplossen van bijvoorbeeld logistieke knelpunten.",
+                "tags": [
+                    "werknemer",
+                    "werk",
+                    "bedrijf"
+                ]
+            },
+            {
+                "description": "De ontwikkeling van Heesch West tot een nieuw duurzaam bedrijfsterrein.",
+                "tags": [
+                    "heesch",
+                    "west",
+                    "duurzaam",
+                    "bedrijf"
+                ]
+            },
+            {
+                "description": "Het aantrekkelijk houden van de brede binnenstad (historisch centrum en Spoorzone). Samen met ondernemers, instellingen en bewoners zorgen we ervoor dat dit de economische motor van onze gemeente blijft. Ook de voltooiing van het nieuwe centrum in Rosmalen krijgt onze aandacht.",
+                "tags": [
+                    "binnenstad",
+                    "centrum",
+                    "spoorzone",
+                    "bewoners",
+                    "ondernemer",
+                    "instelling",
+                    "economisch",
+                    "rosmalen"
+                ]
+            },
+            {
+                "description": "Het stimuleren van startende ondernemers zodat zij stabiel kunnen groeien. Dit zorgt bovendien voor meer werkgelegenheid. De inzet hiervoor via Ondernemerslift+, de Jamfabriek en Grasso zetten we voort.",
+                "tags": [
+                    "startende",
+                    "ondernemer",
+                    "groeien",
+                    "werk",
+                    "werkgelegenheid",
+                    "ondernemerslift",
+                    "jamfabriek",
+                    "grasso",
+                    "volwassenen"
+                ]
+            },
+            {
+                "description": "Innovatie binnen het bedrijfsleven. Als gemeente stimuleren en ondersteunen we dit waar mogelijk. De bestaande campussen zijn bij uitstek de plekken waar die innovatie van de grond kan komen. Dit vanwege de koppeling met het onderwijs.",
+                "tags": [
+                    "innovatie",
+                    "bedrijf",
+                    "gemeente",
+                    "campus",
+                    "onderwijs",
+                    "volwassenen"
+                ]
+            },
+            {
+                "description": "Een bereikbare arbeidsmarkt voor iedereen. We versterken de samenwerking tussen Weener XL en het bedrijfsleven. En bieden mensen met afstand tot de arbeidsmarkt zo meer kansen op werk.",
+                "tags": [
+                    "arbeidsmarkt",
+                    "weener",
+                    "bedrijfsleven",
+                    "bedrijf",
+                    "mensen",
+                    "werk"
+                ]
+            },
+            {
+                "description": "Het verbeteren van de aansluiting tussen onderwijs en arbeidsmarkt door uitvoering van het regionaal Scholingsakkoord. We richten ons vooral op de sectoren techniek, ICT en zorg. Dit met als doel het aantal studenten in deze sectoren te verdubbelen. We werken hiervoor samen met onderwijsinstellingen en het bedrijfsleven.",
+                "tags": [
+                    "onderwijs",
+                    "arbeidsmarkt",
+                    "scholingsakkoord",
+                    "studenten",
+                    "techniek",
+                    "ICT",
+                    "zorg"
+                ]
+            },
+            {
+                "description": "Het aanjagen van vernieuwende initiatieven op het gebied van toerisme en vrijetijdseconomie. We zien veel kansen om hiermee het toerisme binnen onze gemeente te versterken.",
+                "tags": [
+                    "innovatie",
+                    "toerisme",
+                    "vrijetijdseconomie"
+                ]
+            },
+            {
+                "description": "Actieve lobby. Dit doen we om meer gebruik te maken van de ruimte die Europese (economische) fondsen bieden. En om in te kunnen spelen op relevante provinciale en (inter)nationale ontwikkelingen. We breiden de lobby capaciteit hiervoor uit.",
+                "tags": [
+                    "ruimte",
+                    "europa",
+                    "economisch"
+                ]
+            },
+            {
+                "description": "Mogelijke uitbreiding van het maximum aantal dagen waarop verruimde openings- en sluitingstijden voor de horeca zijn toegestaan. En de eventuele verruiming van het aantal nachtzaken. We betrekken horeca, politie, bewoners, bezoekers en jongerenambassadeurs hierbij.",
+                "tags": [
+                    "horeca",
+                    "tijden",
+                    "nachtzaken",
+                    "politie",
+                    "bewoners",
+                    "bezoekers",
+                    "jongerenambassadeurs"
+                ]
+            }
+        ]
     },
     {
-       "id":2,
-       "title":"Talentontwikkeling",
-       "description":"Onderwijs en educatie voor optimale ontwikkeling van ieders talenten",
-       "color": "#e76cc6",
-       "goals":[
-          {
-             "description":"Extra aandacht voor internationalisering binnen het onderwijs. Bijvoorbeeld door dit een plaats te geven in de lokale educatieve agenda.",
-             "tags":[
-                "onderwijs",
-                "internationaal",
-                "internationalisering",
-                "educatieve",
-                "agenda"
-             ]
-          },
-          {
-             "description":"Het voortzetten van het onderwijsinnovatiefonds en deze te richten op de aansluiting van het onderwijs met de arbeidsmarkt.",
-             "tags":[
-                "onderwijs",
-                "innovatie",
-                "fonds",
-                "arbeidsmarkt"
-             ]
-          },
-          {
-             "description":"Meer aandacht voor creativiteit, reflectie en een onderzoekende houding binnen het onderwijs.",
-             "tags":[
-                "creativiteit",
-                "creatief",
-                "onderwijs",
-                "aandacht",
-                "onderzoek"
-             ]
-          },
-          {
-             "description":"Het helpen mogelijk maken van de uitbreiding van campussen en onderwijsinstellingen zoals Koning Willem I College, HAS Hogeschool, Avans Hogeschool en JADS. Ook de (verdere) ontwikkeling van makerspace initiatieven ondersteunen we waar dit kan.",
-             "tags":[
-                "uitbreiding",
-                "campus",
-                "onderwijs",
-                "Koning Willem I College",
-                "has",
-                "avans",
-                "jads",
-                "makerspace"
-             ]
-          },
-          {
-             "description":"De intensivering van de aanpak van taalachterstanden en laaggeletterdheid. En daarmee taalles voor iedereen die dit nodig heeft.",
-             "tags":[
-                "taal",
-                "taalachterstand",
-                "achterstand",
-                "laaggeletterdheid",
-                "taalles",
-                "leren"
-             ]
-          },
-          {
-             "description":"Een Integraal Kindcentrum (IKC) in elke wijk of dorp. We zorgen bovendien voor een eerlijk speelveld tussen de verschillende kinderopvangorganisaties. Daarmee waarborgen we de vrije keuze voor ouders. Een doorlopende leerlijn vormt het uitgangspunt van ons beleid.",
-             "tags":[
-                "integraal",
-                "kind",
-                "centrum",
-                "wijk",
-                "dork",
-                "kinderopvang",
-                "ouders",
-                "leerlijn"
-             ]
-          },
-          {
-             "description":"Het aantrekkelijker maken van ’s-Hertogenbosch voor studenten en starters. We zorgen voor goede huisvesting voor studenten. En bieden meer ruimte aan jongeren festivals en activiteiten. Nieuwe studenten betrekken we meer bij de stad. Bijvoorbeeld door middel van een stadsintroductie.",
-             "tags":[
-                "hertogenbosch",
-                "denbosch",
-                "studenten",
-                "starters",
-                "huisvesting",
-                "fetivals",
-                "activiteiten",
-                "stad"
-             ]
-          },
-          {
-             "description":"De nieuwe onderwijsagenda’s voor de toekomst. Hierin krijgt de toenemende internationalisering een plek.",
-             "tags":[
-                "onderwijs",
-                "toekomst",
-                "internationaal",
-                "internationalisering"
-             ]
-          },
-          {
-             "description":"Oplossingen voor de tekorten op de arbeidsmarkt. Samen met het onderwijs en bedrijfsleven gaan we hiernaar op zoek.",
-             "tags":[
-                "arbeidsmarkt",
-                "bedrijf",
-                "bedrijfsleven",
-                "tekort"
-             ]
-          },
-          {
-             "description":"Hoe we jongeren binnen het basis en voortgezet onderwijs (meer) kennis kunnen laten met ICT en techniek.",
-             "tags":[
-                "jongeren",
-                "kennis",
-                "onderwijs",
-                "ICT",
-                "techniek",
-                "voortgezet"
-             ]
-          },
-          {
-             "description":"Het aanbieden van Natuur- en Milieueducatie binnen het lager onderwijs.",
-             "tags":[
-                "natuur",
-                "milieu",
-                "milieueducatie",
-                "onderwijs",
-                "lager"
-             ]
-          },
-          {
-             "description":"De manier waarop de functie van conciërge op iedere school vormgegeven kan worden waar deze nog ontbreekt.",
-             "tags":[
-                "concierge",
-                "school",
-                "conciërge",
-                "vormgeven"
-             ]
-          },
-          {
-             "description":"Het actiever betrekken van jongeren bij beleid en budgetten die hen aangaan.",
-             "tags":[
-                "betrokken",
-                "jongeren",
-                "actief",
-                "beleid",
-                "budget"
-             ]
-          },
-          {
-             "description":"Meer activiteiten in onze gemeente specifiek gericht op jongeren in de leeftijd van 16 tot 18 jaar.",
-             "tags":[
-                "activiteiten",
-                "jongeren",
-                "16",
-                "18"
-             ]
-          }
-       ]
+        "id": 2,
+        "title": "Talentontwikkeling",
+        "description": "Onderwijs en educatie voor optimale ontwikkeling van ieders talenten",
+        "color": "#e76cc6",
+        "goals": [{
+                "description": "Extra aandacht voor internationalisering binnen het onderwijs. Bijvoorbeeld door dit een plaats te geven in de lokale educatieve agenda.",
+                "tags": [
+                    "onderwijs",
+                    "internationaal",
+                    "internationalisering",
+                    "educatieve",
+                    "agenda",
+                    "jongeren"
+                ]
+            },
+            {
+                "description": "Het voortzetten van het onderwijsinnovatiefonds en deze te richten op de aansluiting van het onderwijs met de arbeidsmarkt.",
+                "tags": [
+                    "onderwijs",
+                    "innovatie",
+                    "fonds",
+                    "arbeidsmarkt"
+                ]
+            },
+            {
+                "description": "Meer aandacht voor creativiteit, reflectie en een onderzoekende houding binnen het onderwijs.",
+                "tags": [
+                    "creativiteit",
+                    "creatief",
+                    "onderwijs",
+                    "aandacht",
+                    "onderzoek",
+                    "kinderen"
+                ]
+            },
+            {
+                "description": "Het helpen mogelijk maken van de uitbreiding van campussen en onderwijsinstellingen zoals Koning Willem I College, HAS Hogeschool, Avans Hogeschool en JADS. Ook de (verdere) ontwikkeling van makerspace initiatieven ondersteunen we waar dit kan.",
+                "tags": [
+                    "uitbreiding",
+                    "campus",
+                    "onderwijs",
+                    "Koning Willem I College",
+                    "has",
+                    "avans",
+                    "jads",
+                    "makerspace",
+                    "kinderen"
+                ]
+            },
+            {
+                "description": "De intensivering van de aanpak van taalachterstanden en laaggeletterdheid. En daarmee taalles voor iedereen die dit nodig heeft.",
+                "tags": [
+                    "taal",
+                    "taalachterstand",
+                    "achterstand",
+                    "laaggeletterdheid",
+                    "taalles",
+                    "leren",
+                    "studenten",
+                    "kinderen"
+                ]
+            },
+            {
+                "description": "Een Integraal Kindcentrum (IKC) in elke wijk of dorp. We zorgen bovendien voor een eerlijk speelveld tussen de verschillende kinderopvangorganisaties. Daarmee waarborgen we de vrije keuze voor ouders. Een doorlopende leerlijn vormt het uitgangspunt van ons beleid.",
+                "tags": [
+                    "integraal",
+                    "kind",
+                    "centrum",
+                    "wijk",
+                    "dork",
+                    "kinderopvang",
+                    "ouders",
+                    "leerlijn",
+                    "kinderen"
+                ]
+            },
+            {
+                "description": "Het aantrekkelijker maken van ’s-Hertogenbosch voor studenten en starters. We zorgen voor goede huisvesting voor studenten. En bieden meer ruimte aan jongeren festivals en activiteiten. Nieuwe studenten betrekken we meer bij de stad. Bijvoorbeeld door middel van een stadsintroductie.",
+                "tags": [
+                    "hertogenbosch",
+                    "denbosch",
+                    "studenten",
+                    "starters",
+                    "huisvesting",
+                    "fetivals",
+                    "activiteiten",
+                    "stad",
+                    "jongeren"
+                ]
+            },
+            {
+                "description": "De nieuwe onderwijsagenda’s voor de toekomst. Hierin krijgt de toenemende internationalisering een plek.",
+                "tags": [
+                    "onderwijs",
+                    "toekomst",
+                    "internationaal",
+                    "internationalisering",
+                    "kinderen",
+                    "jongeren"
+                ]
+            },
+            {
+                "description": "Oplossingen voor de tekorten op de arbeidsmarkt. Samen met het onderwijs en bedrijfsleven gaan we hiernaar op zoek.",
+                "tags": [
+                    "arbeidsmarkt",
+                    "bedrijf",
+                    "bedrijfsleven",
+                    "tekort",
+                    "jongeren",
+                    "volwassenen"
+                ]
+            },
+            {
+                "description": "Hoe we jongeren binnen het basis en voortgezet onderwijs (meer) kennis kunnen laten met ICT en techniek.",
+                "tags": [
+                    "jongeren",
+                    "kennis",
+                    "onderwijs",
+                    "ICT",
+                    "techniek",
+                    "voortgezet"
+                ]
+            },
+            {
+                "description": "Het aanbieden van Natuur- en Milieueducatie binnen het lager onderwijs.",
+                "tags": [
+                    "natuur",
+                    "milieu",
+                    "milieueducatie",
+                    "onderwijs",
+                    "lager",
+                    "jongeren"
+                ]
+            },
+            {
+                "description": "De manier waarop de functie van conciërge op iedere school vormgegeven kan worden waar deze nog ontbreekt.",
+                "tags": [
+                    "concierge",
+                    "school",
+                    "conciërge",
+                    "vormgeven"
+                ]
+            },
+            {
+                "description": "Het actiever betrekken van jongeren bij beleid en budgetten die hen aangaan.",
+                "tags": [
+                    "betrokken",
+                    "jongeren",
+                    "actief",
+                    "beleid",
+                    "budget"
+                ]
+            },
+            {
+                "description": "Meer activiteiten in onze gemeente specifiek gericht op jongeren in de leeftijd van 16 tot 18 jaar.",
+                "tags": [
+                    "activiteiten",
+                    "jongeren",
+                    "16",
+                    "18"
+                ]
+            }
+        ]
     },
     {
-       "id":3,
-       "title":"Sociale kwaliteit",
-       "description":"Iedereen doet mee!",
-       "color": "#916ce7",
-       "goals":[
-          {
-             "description":"Het ondersteunen van kwetsbare inwoners, waaronder nieuwkomers, op het gebied van werk, wonen en financiën.",
-             "tags":[
-                "inwoners",
-                "burger",
-                "kwetsbaar",
-                "nieuwkomer",
-                "werk",
-                "wonen",
-                "financiën"
-             ]
-          },
-          {
-             "description":"Het vroeg in beeld krijgen van problemen rond onder meer eenzaamheid en armoede.",
-             "tags":[
-                "eenzaamheid",
-                "armoede"
-             ]
-          },
-          {
-             "description":"Een toegankelijke gemeente voor mensen met een beperking. Inwoners met een beperking kunnen tegen specifieke problemen aanlopen in de wijk. Voor snelle hulp kunnen zij hiervan melding maken bij het sociale wijkteam.",
-             "tags":[
-                "gemeente",
-                "toegankelijk",
-                "mensen",
-                "beperking",
-                "sociale",
-                "wijkteam"
-             ]
-          },
-          {
-             "description":"Het waar mogelijk ondersteunen van vrijwilligers en de organisaties waarvoor zij zich inzetten.",
-             "tags":[
-                "ondersteunen",
-                "vrijwilliger",
-                "organisatie",
-                "inzetten"
-             ]
-          },
-          {
-             "description":"Humane opvang voor vluchtelingen. Statushouders helpen we zo snel als mogelijk te integreren.",
-             "tags":[
-                "opvang",
-                "vluchtelingen",
-                "humane",
-                "integreren"
-             ]
-          },
-          {
-             "description":"Het blijven van regenbooggemeente en het behouden van onze koploper status waar het gaat om LHBTQI- emancipatie. Het roze stembusakkoord voeren we uit.",
-             "tags":[
-                "LHBTQI",
-                "beweging",
-                "regenboog",
-                "gemeente",
-                "koploper",
-                "roze",
-                "stembus"
-             ]
-          },
-          {
-             "description":"Het waar mogelijk faciliteren van dagactiviteiten in de buurt vanuit huiskamers en andere bewonersinitiatieven. We streven daarbij niet naar aparte huisvesting van ieder initiatief afzonderlijk. Ons uitgangspunt is het maken van slimme combinaties.",
-             "tags":[
-                "faciliteren",
-                "activiteiten",
-                "dag",
-                "buurt",
-                "huiskamer",
-                "bewoner",
-                "initiatieven",
-                "huisvesting"
-             ]
-          }
-       ]
+        "id": 3,
+        "title": "Sociale kwaliteit",
+        "description": "Iedereen doet mee!",
+        "color": "#916ce7",
+        "goals": [{
+                "description": "Het ondersteunen van kwetsbare inwoners, waaronder nieuwkomers, op het gebied van werk, wonen en financiën.",
+                "tags": [
+                    "inwoners",
+                    "burger",
+                    "kwetsbaar",
+                    "nieuwkomer",
+                    "werk",
+                    "wonen",
+                    "financiën",
+                    "volwassenen"
+                ]
+            },
+            {
+                "description": "Het vroeg in beeld krijgen van problemen rond onder meer eenzaamheid en armoede.",
+                "tags": [
+                    "eenzaamheid",
+                    "armoede"
+                ]
+            },
+            {
+                "description": "Een toegankelijke gemeente voor mensen met een beperking. Inwoners met een beperking kunnen tegen specifieke problemen aanlopen in de wijk. Voor snelle hulp kunnen zij hiervan melding maken bij het sociale wijkteam.",
+                "tags": [
+                    "gemeente",
+                    "toegankelijk",
+                    "mensen",
+                    "beperking",
+                    "sociale",
+                    "wijkteam"
+                ]
+            },
+            {
+                "description": "Het waar mogelijk ondersteunen van vrijwilligers en de organisaties waarvoor zij zich inzetten.",
+                "tags": [
+                    "ondersteunen",
+                    "vrijwilliger",
+                    "organisatie",
+                    "inzetten"
+                ]
+            },
+            {
+                "description": "Humane opvang voor vluchtelingen. Statushouders helpen we zo snel als mogelijk te integreren.",
+                "tags": [
+                    "opvang",
+                    "vluchtelingen",
+                    "humane",
+                    "integreren"
+                ]
+            },
+            {
+                "description": "Het blijven van regenbooggemeente en het behouden van onze koploper status waar het gaat om LHBTQI- emancipatie. Het roze stembusakkoord voeren we uit.",
+                "tags": [
+                    "LHBTQI",
+                    "beweging",
+                    "regenboog",
+                    "gemeente",
+                    "koploper",
+                    "roze",
+                    "stembus",
+                    "volwassenen"
+                ]
+            },
+            {
+                "description": "Het waar mogelijk faciliteren van dagactiviteiten in de buurt vanuit huiskamers en andere bewonersinitiatieven. We streven daarbij niet naar aparte huisvesting van ieder initiatief afzonderlijk. Ons uitgangspunt is het maken van slimme combinaties.",
+                "tags": [
+                    "faciliteren",
+                    "activiteiten",
+                    "dag",
+                    "buurt",
+                    "huiskamer",
+                    "bewoner",
+                    "initiatieven",
+                    "huisvesting"
+                ]
+            }
+        ]
     },
     {
-       "id":4,
-       "title":"Gezondheid en vitaliteit",
-       "description":"Positieve gezondheid met zoveel mogelijk toekomstperspectief",
-       "color": "#6c8be7",
-       "goals":[
-          {
-             "description":"Meer focus op positieve gezondheid en de vitaliteit van inwoners. We maken hierover afspraken in de contracten die we sluiten met zorgaanbieders binnen de jeugdzorg en de Wmo. En we starten een gemeente breed programma Positieve Gezondheid om ook vanuit de organisatie hieraan invulling te geven.",
-             "tags":[
-                "focus",
-                "positief",
-                "gezondheid",
-                "vitaliteit",
-                "inwoner",
-                "afspraken",
-                "contracten",
-                "zorg",
-                "zorgaanbieder",
-                "jeugdzorg"
-             ]
-          },
-          {
-             "description":"Het aanpakken van de wachtlijsten in de jeugdzorg. Aan het einde van deze bestuursperiode moet deze problematiek duidelijk minder groot zijn.",
-             "tags":[
-                "jeugdzorg",
-                "wachtlijst"
-             ]
-          },
-          {
-             "description":"Het werk maken van de noodzakelijke veranderingen binnen de jeugdhulp. De bestaande agenda voeren we uit. We zetten in op preventie. Maar wanneer jeugdzorg toch nodig is, is deze zo licht mogelijk en dichtbij huis. Dit vraagt om andere, kleinschalige voorzieningen die een aanvulling zijn op de bestaande zorg.",
-             "tags":[
-                "noodzakelijk",
-                "jeugdzorg",
-                "jeugdhulp",
-                "preventie",
-                "zorg"
-             ]
-          },
-          {
-             "description":"Het voortzetten van het uitgangspunt van ‘Eén gezin, één plan’.",
-             "tags":[
-                "gezin",
-                "plan"
-             ]
-          },
-          {
-             "description":"Nieuwe woonzorgvormen binnen het bestaande landschap van beschermd wonen. Inwoners die nu nog verblijven binnen zorginstellingen kunnen zo zelfstandiger wonen. En krijgen meer perspectief in hun leven.",
-             "tags":[
-                "woonzorg",
-                "zorg",
-                "landschap",
-                "beschermd",
-                "wonen",
-                "inwoner",
-                "burger",
-                "zorginstelling",
-                "zelfstandig",
-                "perspectief",
-                "leven"
-             ]
-          },
-          {
-             "description":"Betrouwbare en herkenbare zorg in buurt en wijk vanuit een sluitende zorgketen. De sociale wijkteams versterken we waar nodig, bijvoorbeeld met wijk GGZ. We willen ervoor zorgen dat de teams een nog steviger basis krijgen in de wijken. En worden gezien als logisch aanspreekpunt.",
-             "tags":[
-                "zorg",
-                "wijk",
-                "zorgketen",
-                "wijkteams",
-                "sociaal",
-                "GGZ"
-             ]
-          },
-          {
-             "description":"Een vaste medewerker voor inwoners die thuiszorg nodig hebben. Deze medewerkers hebben naast hun zorgtaken tevens tijd voor een gesprek. Die gesprekken zijn ook van belang om vroegtijdig problemen in beeld te krijgen. En om zo erger te voorkomen. Bij een nieuwe aanbesteding van huishoudelijke hulp gaat het ons niet alleen om de kosten. De kwaliteit van de geleverde dienstverlening is daarbij ook belangrijk.",
-             "tags":[
-                "medewerker",
-                "vast",
-                "thuiszorg",
-                "zorgtaken",
-                "zorg",
-                "problemen",
-                "voorkomen",
-                "kwaliteit"
-             ]
-          },
-          {
-             "description":"Woonzorgzones in wijken en dorpen waar deze nodig zijn in samenwerking met partners.",
-             "tags":[
-                "zorg",
-                "woonzorg",
-                "zones",
-                "wijk",
-                "dorp",
-                "samenwerking"
-             ]
-          },
-          {
-             "description":"Het worden van een dementievriendelijke gemeente.",
-             "tags":[
-                "dementie",
-                "vriendelijk",
-                "gemeente"
-             ]
-          },
-          {
-             "description":"Versterking van de coalitie tegen eenzaamheid. We zetten stappen in het in beeld krijgen en bespreekbaar maken van eenzaamheidsproblemen. Ons doel is deze op te lossen door slimme combinaties te maken.",
-             "tags":[
-                "eenzaamheid",
-                "probleem",
-                "vereenzaming"
-             ]
-          },
-          {
-             "description":"Meer aandacht voor mantelzorgers en de overbelasting waar velen van hen mee te maken hebben. Daarbij is ondersteuning op maat ons uitgangspunt.",
-             "tags":[
-                "mantelzorg",
-                "overbelasting",
-                "ondersteuning",
-                "ondersteunen"
-             ]
-          },
-          {
-             "description":"Maatregelen die bijdragen aan een rookvrije generatie. Waar mogelijk sluiten we hiervoor aan bij landelijke acties.",
-             "tags":[
-                "maatregel",
-                "bijdragen",
-                "rookvrij",
-                "rook",
-                "generatie",
-                "acties"
-             ]
-          }
-       ]
+        "id": 4,
+        "title": "Gezondheid en vitaliteit",
+        "description": "Positieve gezondheid met zoveel mogelijk toekomstperspectief",
+        "color": "#6c8be7",
+        "goals": [{
+                "description": "Meer focus op positieve gezondheid en de vitaliteit van inwoners. We maken hierover afspraken in de contracten die we sluiten met zorgaanbieders binnen de jeugdzorg en de Wmo. En we starten een gemeente breed programma Positieve Gezondheid om ook vanuit de organisatie hieraan invulling te geven.",
+                "tags": [
+                    "focus",
+                    "positief",
+                    "gezondheid",
+                    "vitaliteit",
+                    "inwoner",
+                    "afspraken",
+                    "contracten",
+                    "zorg",
+                    "zorgaanbieder",
+                    "jeugdzorg"
+                ]
+            },
+            {
+                "description": "Het aanpakken van de wachtlijsten in de jeugdzorg. Aan het einde van deze bestuursperiode moet deze problematiek duidelijk minder groot zijn.",
+                "tags": [
+                    "jeugdzorg",
+                    "wachtlijst"
+                ]
+            },
+            {
+                "description": "Het werk maken van de noodzakelijke veranderingen binnen de jeugdhulp. De bestaande agenda voeren we uit. We zetten in op preventie. Maar wanneer jeugdzorg toch nodig is, is deze zo licht mogelijk en dichtbij huis. Dit vraagt om andere, kleinschalige voorzieningen die een aanvulling zijn op de bestaande zorg.",
+                "tags": [
+                    "noodzakelijk",
+                    "jeugdzorg",
+                    "jeugdhulp",
+                    "preventie",
+                    "zorg"
+                ]
+            },
+            {
+                "description": "Het voortzetten van het uitgangspunt van ‘Eén gezin, één plan’.",
+                "tags": [
+                    "gezin",
+                    "plan"
+                ]
+            },
+            {
+                "description": "Nieuwe woonzorgvormen binnen het bestaande landschap van beschermd wonen. Inwoners die nu nog verblijven binnen zorginstellingen kunnen zo zelfstandiger wonen. En krijgen meer perspectief in hun leven.",
+                "tags": [
+                    "woonzorg",
+                    "zorg",
+                    "landschap",
+                    "beschermd",
+                    "wonen",
+                    "inwoner",
+                    "burger",
+                    "zorginstelling",
+                    "zelfstandig",
+                    "perspectief",
+                    "leven"
+                ]
+            },
+            {
+                "description": "Betrouwbare en herkenbare zorg in buurt en wijk vanuit een sluitende zorgketen. De sociale wijkteams versterken we waar nodig, bijvoorbeeld met wijk GGZ. We willen ervoor zorgen dat de teams een nog steviger basis krijgen in de wijken. En worden gezien als logisch aanspreekpunt.",
+                "tags": [
+                    "zorg",
+                    "wijk",
+                    "zorgketen",
+                    "wijkteams",
+                    "sociaal",
+                    "GGZ"
+                ]
+            },
+            {
+                "description": "Een vaste medewerker voor inwoners die thuiszorg nodig hebben. Deze medewerkers hebben naast hun zorgtaken tevens tijd voor een gesprek. Die gesprekken zijn ook van belang om vroegtijdig problemen in beeld te krijgen. En om zo erger te voorkomen. Bij een nieuwe aanbesteding van huishoudelijke hulp gaat het ons niet alleen om de kosten. De kwaliteit van de geleverde dienstverlening is daarbij ook belangrijk.",
+                "tags": [
+                    "medewerker",
+                    "vast",
+                    "thuiszorg",
+                    "zorgtaken",
+                    "zorg",
+                    "problemen",
+                    "voorkomen",
+                    "kwaliteit"
+                ]
+            },
+            {
+                "description": "Woonzorgzones in wijken en dorpen waar deze nodig zijn in samenwerking met partners.",
+                "tags": [
+                    "zorg",
+                    "woonzorg",
+                    "zones",
+                    "wijk",
+                    "dorp",
+                    "samenwerking",
+                    "ouderen"
+                ]
+            },
+            {
+                "description": "Het worden van een dementievriendelijke gemeente.",
+                "tags": [
+                    "dementie",
+                    "vriendelijk",
+                    "gemeente"
+                ]
+            },
+            {
+                "description": "Versterking van de coalitie tegen eenzaamheid. We zetten stappen in het in beeld krijgen en bespreekbaar maken van eenzaamheidsproblemen. Ons doel is deze op te lossen door slimme combinaties te maken.",
+                "tags": [
+                    "eenzaamheid",
+                    "probleem",
+                    "vereenzaming"
+                ]
+            },
+            {
+                "description": "Meer aandacht voor mantelzorgers en de overbelasting waar velen van hen mee te maken hebben. Daarbij is ondersteuning op maat ons uitgangspunt.",
+                "tags": [
+                    "mantelzorg",
+                    "overbelasting",
+                    "ondersteuning",
+                    "ondersteunen"
+                ]
+            },
+            {
+                "description": "Maatregelen die bijdragen aan een rookvrije generatie. Waar mogelijk sluiten we hiervoor aan bij landelijke acties.",
+                "tags": [
+                    "maatregel",
+                    "bijdragen",
+                    "rookvrij",
+                    "rook",
+                    "generatie",
+                    "acties"
+                ]
+            }
+        ]
     },
     {
-       "id":5,
-       "title":"Cultuur en sport",
-       "description":"Een rijk cultuur- en sportklimaat in een cultuurhistorische omgeving",
-       "color": "#6ce1e7",
-       "goals":[
-          {
-             "description":"Vernieuwbouw van het theater met twee zalen aan de Parade binnen het bestemmingsplan. En binnen de financiële kaders die de gemeenteraad in 2017 heeft gesteld.",
-             "tags":[
-                "bouw",
-                "theater",
-                "parade",
-                "vernieuw"
-             ]
-          },
-          {
-             "description":"Eén innovatieve organisatie voor Bibliotheek, Muzerije en Babel. De nieuwe organisatie richt zich met een op maat gesneden aanbod op verschillende doelgroepen. Daarbij staat de (netwerk)functie voor ons voorop, niet de huisvesting. Wel moet de nieuwe organisatie beschikken over een centrale, laagdrempelige voorziening. Daarvoor bieden de bestaande, in gebruik zijnde panden voldoende mogelijkheden. Het plan hiervoor brengen we in deze periode in ieder geval naar de planstudie fase van het structuurfonds.",
-             "tags":[
-                "innovatie",
-                "bibliotheek",
-                "muzerije",
-                "babel",
-                "organisatie",
-                "aanbod"
-             ]
-          },
-          {
-             "description":"De doorontwikkeling van de Tramkade. We investeren in de vergroening van het terrein. En onderzoeken of we een deel van het huidige gebied kunnen behouden als blijvende culturele hotspot.",
-             "tags":[
-                "ontwikkeling",
-                "doorontwikkeling",
-                "tramkade",
-                "vergroening",
-                "terrein",
-                "onderzoek",
-                "gebied",
-                "culturele",
-                "hotspot"
-             ]
-          },
-          {
-             "description":"Het continueren van de drie culturele fondsen: Landelijk Onderscheidend, Pop-up en Lokaal Effectief.",
-             "tags":[
-                "landelijk",
-                "onderscheidened",
-                "onderscheid",
-                "pop-up",
-                "lokaal",
-                "effect"
-             ]
-          },
-          {
-             "description":"Het versterken van de muziek- en cultuureducatie.",
-             "tags":[
-                "muziek",
-                "cultuur",
-                "educatie",
-                "versterken"
-             ]
-          },
-          {
-             "description":"Het participeren en investeren in de belevingswaarde van de Linie 1629.",
-             "tags":[
-                "participeren",
-                "investeren",
-                "belevingswaarde",
-                "linie",
-                "1629"
-             ]
-          },
-          {
-             "description":"Het blijven omarmen van de legacy van Jeroen Bosch met onze samenleving. Dit door onder meer het Bosch Requiem en de Bosch Parade verder te ondersteunen.",
-             "tags":[
-                "omarmen",
-                "jeroen bosch",
-                "samenleving",
-                "bosch",
-                "requiem",
-                "parade"
-             ]
-          },
-          {
-             "description":"Voortzetten van een lokale omroep met regionale allure.",
-             "tags":[
-                "omroep",
-                "lokaal",
-                "lokale",
-                "allure",
-                "regionaal",
-                "regio"
-             ]
-          },
-          {
-             "description":"Het vitaal maken van de huidige sport infrastrastructuur inclusief ‘De Plek’. We dringen het tekort op het budget sportaccommodaties terug. Bijvoorbeeld door multifunctionele accommodaties voor onder meer culturele verenigingen en sportclubs. Ook zijn hierbij slimme combinaties denkbaar met andersoortige maatschappelijke voorzieningen.",
-             "tags":[
-                "de plek",
-                "infra",
-                "structuur",
-                "vitaal",
-                "sport",
-                "accommodaties",
-                "cultuur",
-                "sportclub",
-                "clubs"
-             ]
-          },
-          {
-             "description":"Een multifunctionele sporthal in De Groote Wielen.",
-             "tags":[
-                "multi",
-                "sporthal",
-                "groote wielen"
-             ]
-          }
-       ]
+        "id": 5,
+        "title": "Cultuur en sport",
+        "description": "Een rijk cultuur- en sportklimaat in een cultuurhistorische omgeving",
+        "color": "#6ce1e7",
+        "goals": [{
+                "description": "Vernieuwbouw van het theater met twee zalen aan de Parade binnen het bestemmingsplan. En binnen de financiële kaders die de gemeenteraad in 2017 heeft gesteld.",
+                "tags": [
+                    "bouw",
+                    "theater",
+                    "parade",
+                    "vernieuw"
+                ]
+            },
+            {
+                "description": "Eén innovatieve organisatie voor Bibliotheek, Muzerije en Babel. De nieuwe organisatie richt zich met een op maat gesneden aanbod op verschillende doelgroepen. Daarbij staat de (netwerk)functie voor ons voorop, niet de huisvesting. Wel moet de nieuwe organisatie beschikken over een centrale, laagdrempelige voorziening. Daarvoor bieden de bestaande, in gebruik zijnde panden voldoende mogelijkheden. Het plan hiervoor brengen we in deze periode in ieder geval naar de planstudie fase van het structuurfonds.",
+                "tags": [
+                    "innovatie",
+                    "bibliotheek",
+                    "muzerije",
+                    "babel",
+                    "organisatie",
+                    "aanbod"
+                ]
+            },
+            {
+                "description": "De doorontwikkeling van de Tramkade. We investeren in de vergroening van het terrein. En onderzoeken of we een deel van het huidige gebied kunnen behouden als blijvende culturele hotspot.",
+                "tags": [
+                    "ontwikkeling",
+                    "doorontwikkeling",
+                    "tramkade",
+                    "vergroening",
+                    "terrein",
+                    "onderzoek",
+                    "gebied",
+                    "culturele",
+                    "hotspot"
+                ]
+            },
+            {
+                "description": "Het continueren van de drie culturele fondsen: Landelijk Onderscheidend, Pop-up en Lokaal Effectief.",
+                "tags": [
+                    "landelijk",
+                    "onderscheidened",
+                    "onderscheid",
+                    "pop-up",
+                    "lokaal",
+                    "effect"
+                ]
+            },
+            {
+                "description": "Het versterken van de muziek- en cultuureducatie.",
+                "tags": [
+                    "muziek",
+                    "cultuur",
+                    "educatie",
+                    "versterken"
+                ]
+            },
+            {
+                "description": "Het participeren en investeren in de belevingswaarde van de Linie 1629.",
+                "tags": [
+                    "participeren",
+                    "investeren",
+                    "belevingswaarde",
+                    "linie",
+                    "1629"
+                ]
+            },
+            {
+                "description": "Het blijven omarmen van de legacy van Jeroen Bosch met onze samenleving. Dit door onder meer het Bosch Requiem en de Bosch Parade verder te ondersteunen.",
+                "tags": [
+                    "omarmen",
+                    "jeroen bosch",
+                    "samenleving",
+                    "bosch",
+                    "requiem",
+                    "parade"
+                ]
+            },
+            {
+                "description": "Voortzetten van een lokale omroep met regionale allure.",
+                "tags": [
+                    "omroep",
+                    "lokaal",
+                    "lokale",
+                    "allure",
+                    "regionaal",
+                    "regio"
+                ]
+            },
+            {
+                "description": "Het vitaal maken van de huidige sport infrastrastructuur inclusief ‘De Plek’. We dringen het tekort op het budget sportaccommodaties terug. Bijvoorbeeld door multifunctionele accommodaties voor onder meer culturele verenigingen en sportclubs. Ook zijn hierbij slimme combinaties denkbaar met andersoortige maatschappelijke voorzieningen.",
+                "tags": [
+                    "de plek",
+                    "infra",
+                    "structuur",
+                    "vitaal",
+                    "sport",
+                    "accommodaties",
+                    "cultuur",
+                    "sportclub",
+                    "clubs"
+                ]
+            },
+            {
+                "description": "Een multifunctionele sporthal in De Groote Wielen.",
+                "tags": [
+                    "multi",
+                    "sporthal",
+                    "groote wielen"
+                ]
+            }
+        ]
     },
     {
-       "id":6,
-       "title":"Energie & klimaatadaptatie",
-       "description":"’s-Hertogenbosch vergroent!",
-       "color": "#6ce798",
-       "goals":[
-          {
-             "description":"Forse verduurzaming van bestaande en nieuwe woningen. Waar het gaat om nieuwbouw willen we nu en in de toekomst vooruit lopen op de landelijke norm. Enkele gebieden wijzen we aan tot proeftuin voor het duurzaam wonen van de toekomst. En streven hier naar de realisatie van klimaat neutrale en waar mogelijk energie positieve woningen. Over de verduurzaming van sociale huurwoningen maken we afspraken met corporaties via de prestatieafspraken in de Woonagenda.",
-             "tags":[
-                "verduurzaming",
-                "duurzaam",
-                "fors",
-                "woning",
-                "nieuwbouw",
-                "toekomst",
-                "landelijk",
-                "proeftuin",
-                "wonen",
-                "toekomst",
-                "klimaat",
-                "neutraal"
-             ]
-          },
-          {
-             "description":"Het waar mogelijk versimpelen of schrappen van regels ten behoeve van duurzaam bouwen.",
-             "tags":[
-                "duurzaam",
-                "bouwen",
-                "regels"
-             ]
-          },
-          {
-             "description":"Het stapsgewijs toewerken naar een aardgasvrije gemeente. We wijzen één of meerdere aardgasvrije wijken aan als proeftuin. En onderzoeken hoe we kunnen aansluiten bij projecten die het Rijk in dit kader start.",
-             "tags":[
-                "aardgas",
-                "milieu",
-                "co2",
-                "neutraal",
-                "rijk"
-             ]
-          },
-          {
-             "description":"Energietransitieplannen per wijk.",
-             "tags":[
-                "energie",
-                "milieu",
-                "wijk",
-                "plannen",
-                "transitie"
-             ]
-          },
-          {
-             "description":"Een nieuw klimaatakkoord met het bedrijfsleven.",
-             "tags":[
-                "klimaat",
-                "akkoord",
-                "bedrijfsleven",
-                "bedrijf",
-                "milieu"
-             ]
-          },
-          {
-             "description":"Het in een vroeg stadium betrekken van inwoners bij duurzaamheidsmaatregelen. Bijvoorbeeld waar het gaat om de plaatsing van windmolens. Inwoners die in de directe omgeving hiervan wonen, moeten zoveel mogelijk mee kunnen profiteren via coöperatieve vormen.",
-             "tags":[
-                "duurzaam",
-                "maatregel",
-                "windmolens",
-                "wind",
-                "milieu"
-             ]
-          },
-          {
-             "description":"Het in een vroegtijdig stadium waar mogelijk verder verduurzamen van plannen die inwoners zelf hebben. Bij het aanvragen van een vergunning bij onze gemeente krijgen zij hierover advies.",
-             "tags":[
-                "stadium",
-                "verduurzaming",
-                "duurzaam",
-                "inwoner",
-                "vergunning",
-                "advies"
-             ]
-          },
-          {
-             "description":"Stevige communicatie over de energie transitie, bijvoorbeeld via het Groen Loket. Hier is een overzicht te vinden van alle regelingen en initiatieven. Ook is via dit loket meer informatie verkrijgbaar over private partijen |die bijvoorbeeld zonnepanelen aanbieden.",
-             "tags":[
-                "communicatie",
-                "energie",
-                "transitie",
-                "groen",
-                "loket",
-                "regeling",
-                "initiatieven",
-                "zonnepanelen"
-             ]
-          },
-          {
-             "description":"Bundeling van duurzaamheidsregelingen. Dit om te voorkomen dat inwoners van het kastje naar de muur worden gestuurd. Naast middelen voor energiebesparing en klimaat adaptie zorgen we binnen die nieuwe regeling ook voor financiële ruimte voor plannen op het gebied van energie transitie. We onderzoeken hoe we deze regeling zo toegankelijk mogelijk kunnen maken voor alle inwoners. Via het Groen Loket kan informatie over de regeling worden opgevraagd. En kunnen aanvragen worden gedaan.",
-             "tags":[
-                "duurzaam",
-                "inwoner",
-                "klimaat",
-                "adaptie"
-             ]
-          },
-          {
-             "description":"Het betrekken en stimuleren van inwoners door binnen het wijk- en buurtbudget middelen toe te voegen voor groenprojecten.",
-             "tags":[
-                "inwoner",
-                "wijk",
-                "buurt",
-                "groen",
-                "milieu"
-             ]
-          },
-          {
-             "description":"Een innovatieve openbare ruimte met onder meer energie opwekkende of besparende maatregelen.",
-             "tags":[
-                "innovatie",
-                "energie",
-                "milieu",
-                "maatregel"
-             ]
-          },
-          {
-             "description":"Het versterken van de natuur binnen de bebouwde kom door steen plaats te laten maken voor groen. Bijvoorbeeld door de aanleg en realisatie van moestuinen, groene daken en groene schooltuinen en pleinen. Ook inwoners moeten hieraan een bijdrage leveren. Met onze communicatie willen hen hiervan (meer) bewust maken.",
-             "tags":[
-                "natuur",
-                "bebouwde kom",
-                "groen",
-                "milieu",
-                "moestuin",
-                "groene gaken",
-                "schooltuinen",
-                "tuinen",
-                "plein",
-                "inwoner",
-                "bewust"
-             ]
-          },
-          {
-             "description":"Een verdubbeling van het aantal aangeplante bomen per jaar.",
-             "tags":[
-                "bomen",
-                "planten",
-                "verdubbeling"
-             ]
-          },
-          {
-             "description":"Het gebruik maken van de kansen die water biedt voor economische ontwikkelingen. Bijvoorbeeld op het gebied van bijvoorbeeld recreatie. Dit naast het belang van water met het oog op de biodiversiteit.",
-             "tags":[
-                "water",
-                "ontwikkeling",
-                "economisch",
-                "recreatie",
-                "water",
-                "biodiversiteit"
-             ]
-          },
-          {
-             "description":"Duurzame landbouw, waarbij we streven naar de maat van het familiebedrijf. Ondernemers bieden we ruimte om hierin te innoveren.",
-             "tags":[
-                "duurzaam",
-                "landbouw",
-                "familiebedrijf",
-                "ondernemer",
-                "innoveren",
-                "innovatie"
-             ]
-          },
-          {
-             "description":"Een volgende stap in het integraal dierenwelzijnsbeleid.",
-             "tags":[
-                "dieren",
-                "welzijn",
-                "beleid"
-             ]
-          },
-          {
-             "description":"Het zoveel als mogelijk voorkomen van afvalproductie. Afval zien we primair als grondstof. En zetten daarmee stappen op het gebied van de circulaire economie.",
-             "tags":[
-                "afval",
-                "productie",
-                "voorkomen",
-                "grondstof",
-                "circulaire",
-                "economie"
-             ]
-          },
-          {
-             "description":"Een klimaatjaarverslag, gekoppeld aan de bestaande klimaatbegroting.",
-             "tags":[
-                "klimaat",
-                "jaar",
-                "verslag",
-                "begroting"
-             ]
-          }
-       ]
+        "id": 6,
+        "title": "Energie & klimaatadaptatie",
+        "description": "’s-Hertogenbosch vergroent!",
+        "color": "#6ce798",
+        "goals": [{
+                "description": "Forse verduurzaming van bestaande en nieuwe woningen. Waar het gaat om nieuwbouw willen we nu en in de toekomst vooruit lopen op de landelijke norm. Enkele gebieden wijzen we aan tot proeftuin voor het duurzaam wonen van de toekomst. En streven hier naar de realisatie van klimaat neutrale en waar mogelijk energie positieve woningen. Over de verduurzaming van sociale huurwoningen maken we afspraken met corporaties via de prestatieafspraken in de Woonagenda.",
+                "tags": [
+                    "verduurzaming",
+                    "duurzaam",
+                    "fors",
+                    "woning",
+                    "nieuwbouw",
+                    "toekomst",
+                    "landelijk",
+                    "proeftuin",
+                    "wonen",
+                    "toekomst",
+                    "klimaat",
+                    "neutraal"
+                ]
+            },
+            {
+                "description": "Het waar mogelijk versimpelen of schrappen van regels ten behoeve van duurzaam bouwen.",
+                "tags": [
+                    "duurzaam",
+                    "bouwen",
+                    "regels"
+                ]
+            },
+            {
+                "description": "Het stapsgewijs toewerken naar een aardgasvrije gemeente. We wijzen één of meerdere aardgasvrije wijken aan als proeftuin. En onderzoeken hoe we kunnen aansluiten bij projecten die het Rijk in dit kader start.",
+                "tags": [
+                    "aardgas",
+                    "milieu",
+                    "co2",
+                    "neutraal",
+                    "rijk"
+                ]
+            },
+            {
+                "description": "Energietransitieplannen per wijk.",
+                "tags": [
+                    "energie",
+                    "milieu",
+                    "wijk",
+                    "plannen",
+                    "transitie"
+                ]
+            },
+            {
+                "description": "Een nieuw klimaatakkoord met het bedrijfsleven.",
+                "tags": [
+                    "klimaat",
+                    "akkoord",
+                    "bedrijfsleven",
+                    "bedrijf",
+                    "milieu"
+                ]
+            },
+            {
+                "description": "Het in een vroeg stadium betrekken van inwoners bij duurzaamheidsmaatregelen. Bijvoorbeeld waar het gaat om de plaatsing van windmolens. Inwoners die in de directe omgeving hiervan wonen, moeten zoveel mogelijk mee kunnen profiteren via coöperatieve vormen.",
+                "tags": [
+                    "duurzaam",
+                    "maatregel",
+                    "windmolens",
+                    "wind",
+                    "milieu"
+                ]
+            },
+            {
+                "description": "Het in een vroegtijdig stadium waar mogelijk verder verduurzamen van plannen die inwoners zelf hebben. Bij het aanvragen van een vergunning bij onze gemeente krijgen zij hierover advies.",
+                "tags": [
+                    "stadium",
+                    "verduurzaming",
+                    "duurzaam",
+                    "inwoner",
+                    "vergunning",
+                    "advies"
+                ]
+            },
+            {
+                "description": "Stevige communicatie over de energie transitie, bijvoorbeeld via het Groen Loket. Hier is een overzicht te vinden van alle regelingen en initiatieven. Ook is via dit loket meer informatie verkrijgbaar over private partijen |die bijvoorbeeld zonnepanelen aanbieden.",
+                "tags": [
+                    "communicatie",
+                    "energie",
+                    "transitie",
+                    "groen",
+                    "loket",
+                    "regeling",
+                    "initiatieven",
+                    "zonnepanelen"
+                ]
+            },
+            {
+                "description": "Bundeling van duurzaamheidsregelingen. Dit om te voorkomen dat inwoners van het kastje naar de muur worden gestuurd. Naast middelen voor energiebesparing en klimaat adaptie zorgen we binnen die nieuwe regeling ook voor financiële ruimte voor plannen op het gebied van energie transitie. We onderzoeken hoe we deze regeling zo toegankelijk mogelijk kunnen maken voor alle inwoners. Via het Groen Loket kan informatie over de regeling worden opgevraagd. En kunnen aanvragen worden gedaan.",
+                "tags": [
+                    "duurzaam",
+                    "inwoner",
+                    "klimaat",
+                    "adaptie"
+                ]
+            },
+            {
+                "description": "Het betrekken en stimuleren van inwoners door binnen het wijk- en buurtbudget middelen toe te voegen voor groenprojecten.",
+                "tags": [
+                    "inwoner",
+                    "wijk",
+                    "buurt",
+                    "groen",
+                    "milieu"
+                ]
+            },
+            {
+                "description": "Een innovatieve openbare ruimte met onder meer energie opwekkende of besparende maatregelen.",
+                "tags": [
+                    "innovatie",
+                    "energie",
+                    "milieu",
+                    "maatregel"
+                ]
+            },
+            {
+                "description": "Het versterken van de natuur binnen de bebouwde kom door steen plaats te laten maken voor groen. Bijvoorbeeld door de aanleg en realisatie van moestuinen, groene daken en groene schooltuinen en pleinen. Ook inwoners moeten hieraan een bijdrage leveren. Met onze communicatie willen hen hiervan (meer) bewust maken.",
+                "tags": [
+                    "natuur",
+                    "bebouwde kom",
+                    "groen",
+                    "milieu",
+                    "moestuin",
+                    "groene gaken",
+                    "schooltuinen",
+                    "tuinen",
+                    "plein",
+                    "inwoner",
+                    "bewust"
+                ]
+            },
+            {
+                "description": "Een verdubbeling van het aantal aangeplante bomen per jaar.",
+                "tags": [
+                    "bomen",
+                    "planten",
+                    "verdubbeling"
+                ]
+            },
+            {
+                "description": "Het gebruik maken van de kansen die water biedt voor economische ontwikkelingen. Bijvoorbeeld op het gebied van bijvoorbeeld recreatie. Dit naast het belang van water met het oog op de biodiversiteit.",
+                "tags": [
+                    "water",
+                    "ontwikkeling",
+                    "economisch",
+                    "recreatie",
+                    "water",
+                    "biodiversiteit"
+                ]
+            },
+            {
+                "description": "Duurzame landbouw, waarbij we streven naar de maat van het familiebedrijf. Ondernemers bieden we ruimte om hierin te innoveren.",
+                "tags": [
+                    "duurzaam",
+                    "landbouw",
+                    "familiebedrijf",
+                    "ondernemer",
+                    "innoveren",
+                    "innovatie"
+                ]
+            },
+            {
+                "description": "Een volgende stap in het integraal dierenwelzijnsbeleid.",
+                "tags": [
+                    "dieren",
+                    "welzijn",
+                    "beleid"
+                ]
+            },
+            {
+                "description": "Het zoveel als mogelijk voorkomen van afvalproductie. Afval zien we primair als grondstof. En zetten daarmee stappen op het gebied van de circulaire economie.",
+                "tags": [
+                    "afval",
+                    "productie",
+                    "voorkomen",
+                    "grondstof",
+                    "circulaire",
+                    "economie"
+                ]
+            },
+            {
+                "description": "Een klimaatjaarverslag, gekoppeld aan de bestaande klimaatbegroting.",
+                "tags": [
+                    "klimaat",
+                    "jaar",
+                    "verslag",
+                    "begroting"
+                ]
+            }
+        ]
     },
     {
-       "id":7,
-       "title":"Leven en wonen",
-       "description":"Voldoende en duurzamere woningen in sterke wijken en dorpen",
-       "color": "#b7e76c",
-       "goals":[
-          {
-             "description":"Realisatie van nieuwe woningen in bestaand bebouwd gebied. Bijvoorbeeld door het bouwen in de hoogte waar dit mogelijk is in de brede binnenstad (aan de randen van het historische centrum en in de Spoorzone). En door de transformatie van leegstaande kantoorgebouwen en het mogelijk maken van nieuwe woonconcepten.",
-             "tags":[
-                "woning",
-                "nieuw",
-                "bebwoud",
-                "hoogte",
-                "binnenstad",
-                "historisch",
-                "centrum",
-                "kantoor"
-             ]
-          },
-          {
-             "description":"Doorstroming op de woningmarkt.",
-             "tags":[
-                "doorstroming",
-                "woningmarkt",
-                "woning"
-             ]
-          },
-          {
-             "description":"Het mogelijk maken van nieuwe CPO-projecten.",
-             "tags":[
-                "cpo",
-                "projecten",
-                "collectief",
-                "particulier",
-                "opdrachtgever"
-             ]
-          },
-          {
-             "description":"Forse verduurzaming van bestaande en nieuwe woningen, zoals beschreven in de paragraaf ’s-Hertogenbosch vergroent!",
-             "tags":[
-                "fors",
-                "verduurzaming",
-                "woningen",
-                "nieuwe"
-             ]
-          },
-          {
-             "description":"Het gebruiken van de mogelijkheden om vanuit het grondbeleid de verduurzaming en doorstroming te bevorderen.",
-             "tags":[
-                "verduurzaming",
-                "doorstroming",
-                "grondbeleid"
-             ]
-          },
-          {
-             "description":"Onderzoek naar nieuwe mogelijkheden voor wonen op en aan het water.",
-             "tags":[
-                "wonen",
-                "water",
-                "onderzoek"
-             ]
-          },
-          {
-             "description":"Realisatie van een nieuw permanent winkelcentrum aan de noordzijde van de Groote Wielenplas.",
-             "tags":[
-                "winkel",
-                "centrum",
-                "groote wielen",
-                "plas"
-             ]
-          },
-          {
-             "description":"Het behoud van de kwaliteit van de openbare ruimte. Daarbij houden we bij de inrichting rekening met klimaatverandering en ecologisch beheer.",
-             "tags":[
-                "kwaliteit",
-                "openbare",
-                "ruimte",
-                "inrichting",
-                "klimaat",
-                "verandering",
-                "ecologisch",
-                "beheer"
-             ]
-          },
-          {
-             "description":"Het waar mogelijk verder verbeteren van de digitale infrastructuur.",
-             "tags":[
-                "verbeteren",
-                "infrastructuur",
-                "digitaal",
-                "IT",
-                "ICT"
-             ]
-          },
-          {
-             "description":"Het enthousiast benutten en beleefbaar maken van de parken binnen onze gemeente.",
-             "tags":[
-                "parken",
-                "park",
-                "wandelen"
-             ]
-          },
-          {
-             "description":"Een pilot met vrij te gebruiken stoelen op één of meer plekken in de gemeente. Bijvoorbeeld in de brede Bossche binnenstad. Dit naar voorbeeld van parken in bijvoorbeeld Parijs en Londen.",
-             "tags":[
-                "stoel",
-                "gemeente",
-                "bossche",
-                "binnenstad"
-             ]
-          },
-          {
-             "description":"Versterking van de recreatieve en toeristische waarde van het buitengebied, onder meer door functieverandering van voormalig agrarisch vastgoed.",
-             "tags":[
-                "recreatie",
-                "buiten",
-                "gebied",
-                "toerisme",
-                "toeristische",
-                "agrarisch",
-                "vastgoed"
-             ]
-          }
-       ]
+        "id": 7,
+        "title": "Leven en wonen",
+        "description": "Voldoende en duurzamere woningen in sterke wijken en dorpen",
+        "color": "#b7e76c",
+        "goals": [{
+                "description": "Realisatie van nieuwe woningen in bestaand bebouwd gebied. Bijvoorbeeld door het bouwen in de hoogte waar dit mogelijk is in de brede binnenstad (aan de randen van het historische centrum en in de Spoorzone). En door de transformatie van leegstaande kantoorgebouwen en het mogelijk maken van nieuwe woonconcepten.",
+                "tags": [
+                    "woning",
+                    "nieuw",
+                    "bebwoud",
+                    "hoogte",
+                    "binnenstad",
+                    "historisch",
+                    "centrum",
+                    "kantoor"
+                ]
+            },
+            {
+                "description": "Doorstroming op de woningmarkt.",
+                "tags": [
+                    "doorstroming",
+                    "woningmarkt",
+                    "woning",
+                    "volwassenen"
+                ]
+            },
+            {
+                "description": "Het mogelijk maken van nieuwe CPO-projecten.",
+                "tags": [
+                    "cpo",
+                    "projecten",
+                    "collectief",
+                    "particulier",
+                    "opdrachtgever"
+                ]
+            },
+            {
+                "description": "Forse verduurzaming van bestaande en nieuwe woningen, zoals beschreven in de paragraaf ’s-Hertogenbosch vergroent!",
+                "tags": [
+                    "fors",
+                    "verduurzaming",
+                    "woningen",
+                    "nieuwe"
+                ]
+            },
+            {
+                "description": "Het gebruiken van de mogelijkheden om vanuit het grondbeleid de verduurzaming en doorstroming te bevorderen.",
+                "tags": [
+                    "verduurzaming",
+                    "doorstroming",
+                    "grondbeleid"
+                ]
+            },
+            {
+                "description": "Onderzoek naar nieuwe mogelijkheden voor wonen op en aan het water.",
+                "tags": [
+                    "wonen",
+                    "water",
+                    "onderzoek"
+                ]
+            },
+            {
+                "description": "Realisatie van een nieuw permanent winkelcentrum aan de noordzijde van de Groote Wielenplas.",
+                "tags": [
+                    "winkel",
+                    "centrum",
+                    "groote wielen",
+                    "plas"
+                ]
+            },
+            {
+                "description": "Het behoud van de kwaliteit van de openbare ruimte. Daarbij houden we bij de inrichting rekening met klimaatverandering en ecologisch beheer.",
+                "tags": [
+                    "kwaliteit",
+                    "openbare",
+                    "ruimte",
+                    "inrichting",
+                    "klimaat",
+                    "verandering",
+                    "ecologisch",
+                    "beheer"
+                ]
+            },
+            {
+                "description": "Het waar mogelijk verder verbeteren van de digitale infrastructuur.",
+                "tags": [
+                    "verbeteren",
+                    "infrastructuur",
+                    "digitaal",
+                    "IT",
+                    "ICT",
+                    "jongeren"
+                ]
+            },
+            {
+                "description": "Het enthousiast benutten en beleefbaar maken van de parken binnen onze gemeente.",
+                "tags": [
+                    "parken",
+                    "park",
+                    "wandelen",
+                    "kinderen",
+                    "jongeren",
+                    "volwassenen",
+                    "ouderen"
+                ]
+            },
+            {
+                "description": "Een pilot met vrij te gebruiken stoelen op één of meer plekken in de gemeente. Bijvoorbeeld in de brede Bossche binnenstad. Dit naar voorbeeld van parken in bijvoorbeeld Parijs en Londen.",
+                "tags": [
+                    "stoel",
+                    "gemeente",
+                    "bossche",
+                    "binnenstad",
+                    "volwassenen",
+                    "jongeren",
+                    "ouderen"
+                ]
+            },
+            {
+                "description": "Versterking van de recreatieve en toeristische waarde van het buitengebied, onder meer door functieverandering van voormalig agrarisch vastgoed.",
+                "tags": [
+                    "recreatie",
+                    "buiten",
+                    "gebied",
+                    "toerisme",
+                    "toeristische",
+                    "agrarisch",
+                    "vastgoed"
+                ]
+            }
+        ]
     },
     {
-       "id":8,
-       "title":"Verkeer en mobiliteit",
-       "color": "#e4e76c",
-       "description":"Optimale bereikbaarheid door slimme, schone en duurzame oplossingen",
-       "goals":[
-          {
-             "description":"Versnelde realisatie van de 30 kilometer binnenstadsring. Dit is één van de belangrijkste laatste maatregelen die nodig zijn voor een autoluwe binnenstad.",
-             "tags":[
-                "binnenstadsring",
-                "autoluwe",
-                "milieu"
-             ]
-          },
-          {
-             "description":"Vervanging van de Tolbrug garage door realisatie van een nieuwe parkeervoorziening in het GZG. In het GZG verwezenlijken we ook een nieuwe fietsenstalling.",
-             "tags":[
-                "tolburg",
-                "garage",
-                "parkeer",
-                "parkeren",
-                "GZG",
-                "fiets"
-             ]
-          },
-          {
-             "description":"Een duurzaam, emissie loos bevoorradingssysteem dat horeca en ondernemers in de binnenstad bevoorraadt. Waar mogelijk haken wij hiervoor aan bij het provinciale energieprogramma en de landelijke Green Deal Zero Emissie Stadslogistiek.",
-             "tags":[
-                "duurzaam",
-                "emissie",
-                "horeca",
-                "milieu"
-             ]
-          },
-          {
-             "description":"Een groene onderwijscampus door de Onderwijsboulevard vrij te maken van doorgaand verkeer.",
-             "tags":[
-                "onderwijs",
-                "campus",
-                "verkeer",
-                "vrij",
-                "groen",
-                "milieu"
-             ]
-          },
-          {
-             "description":"De verplaatsing van de P+R aan de Magistratenlaan. Hierdoor verbetert de doorstroming op deze weg sterk.",
-             "tags":[
-                "magistratenlaan",
-                "doorstroming",
-                "milieu"
-             ]
-          },
-          {
-             "description":"Het permanent maken van het huidige systeem van transferia waar dit nog nodig is. Dit ongeacht de specifieke locatie.",
-             "tags":[
-                "trans",
-                "vervoer",
-                "locatie",
-                "mobiliteit",
-                "vervoer"
-             ]
-          },
-          {
-             "description":"Het ontwikkelen van nieuwe mobiliteitsconcepten in samenwerking met de JADS. Waar mogelijk is onze gemeente hiervoor een proeftuin.",
-             "tags":[
-                "mobiliteit",
-                "vervoer",
-                "JADS"
-             ]
-          },
-          {
-             "description":"Minimaal een verdubbeling van het aantal oplaadpunten in onze gemeente. Dit houdt in dat er deze bestuursperiode minstens 2.000 oplaadpunten bij komen.",
-             "tags":[
-                "verdubbeling",
-                "oplaadpunten",
-                "milieu",
-                "auto",
-                "elektrisch"
-             ]
-          },
-          {
-             "description":"Het waar mogelijk aanleggen van nieuwe fietssnelwegen. En de voltooiing van het fietsnetwerk binnen onze gemeente, inclusief de daarvoor benodigde voorzieningen (waaronder fietsenstallingen).",
-             "tags":[
-                "fiets",
-                "snelweg",
-                "vervoer"
-             ]
-          },
-          {
-             "description":"Het verbeteren van de verkeersveiligheid waar dit noodzakelijk is, onder andere bij locaties als scholen en sportaccommodaties. En door gemeente breed een einde te maken aan straat racen. Het reeds ingezette beleid om aan langzaam verkeer voorrang te geven, zetten we voort.",
-             "tags":[
-                "school",
-                "sport",
-                "verkeer",
-                "veiligheid"
-             ]
-          },
-          {
-             "description":"Een goede bereikbaarheid van plekken als de binnenstad, winkelcentra en het JBZ vanuit verschillende delen in onze gemeente.",
-             "tags":[
-                "bereikbaar",
-                "binnenstad",
-                "winkel",
-                "JBZ"
-             ]
-          },
-          {
-             "description":"Een efficiënt collectief vervoerssysteem van openbaar vervoer en andere overheids- en particuliere diensten, waaronder buurtbus, ouderenbus, Wmo- en leerlingenvervoer en OV-fietsen. Met dat systeem verbeteren we de bereikbaarheid van de wijken en dorpen. Tevens is hierin oog voor het belang van deze vervoersvormen voor specifieke groepen inwoners, zoals ouderen en jongeren.",
-             "tags":[
-                "vervoer",
-                "buurtbus",
-                "ouderenbus",
-                "ov"
-             ]
-          },
-          {
-             "description":"Het op termijn realiseren van station Maaspoort indien zich hiervoor nieuwe mogelijkheden aandienen. We onderzoeken de mogelijkheden van een snelle busverbinding tussen de Maaspoort en het centraal station bij een nieuwe concessieverlening.",
-             "tags":[
-                "station",
-                "maaspoort",
-                "verbinding",
-                "centraal"
-             ]
-          },
-          {
-             "description":"De aanpak van de fileproblematiek op de A2. We blijven actief binnen de integrale verkenning van de A2 Deil-Vught die door het Rijk wordt uitgevoerd.",
-             "tags":[
-                "file",
-                "vervoer",
-                "auto",
-                "A2",
-                "deil",
-                "vught",
-                "rijk"
-             ]
-          },
-          {
-             "description":"Een goede bereikbaarheid van de oostelijke delen van de gemeente. Het onderzoek naar de realisatie van de Oostelijke Landweg vormt hiervoor een belangrijke bouwsteen.",
-             "tags":[
-                "bereikbaar",
-                "oost",
-                "landweg"
-             ]
-          },
-          {
-             "description":"Het verbeteren van de bereikbaarheid tussen de Brabantse steden in samenwerking met de B5.",
-             "tags":[
-                "bereikbaar",
-                "steden",
-                "verbeteren",
-                "vervoer"
-             ]
-          },
-          {
-             "description":"Het voortzetten van de lobby tegen de plannen voor de verhoging van het goederenvervoer per spoor. We doen dit samen met andere gemeenten.",
-             "tags":[
-                "vervoer",
-                "tegen",
-                "spoor",
-                "verhoging"
-             ]
-          }
-       ]
+        "id": 8,
+        "title": "Verkeer en mobiliteit",
+        "color": "#e4e76c",
+        "description": "Optimale bereikbaarheid door slimme, schone en duurzame oplossingen",
+        "goals": [{
+                "description": "Versnelde realisatie van de 30 kilometer binnenstadsring. Dit is één van de belangrijkste laatste maatregelen die nodig zijn voor een autoluwe binnenstad.",
+                "tags": [
+                    "binnenstadsring",
+                    "autoluwe",
+                    "milieu"
+                ]
+            },
+            {
+                "description": "Vervanging van de Tolbrug garage door realisatie van een nieuwe parkeervoorziening in het GZG. In het GZG verwezenlijken we ook een nieuwe fietsenstalling.",
+                "tags": [
+                    "tolburg",
+                    "garage",
+                    "parkeer",
+                    "parkeren",
+                    "GZG",
+                    "fiets"
+                ]
+            },
+            {
+                "description": "Een duurzaam, emissie loos bevoorradingssysteem dat horeca en ondernemers in de binnenstad bevoorraadt. Waar mogelijk haken wij hiervoor aan bij het provinciale energieprogramma en de landelijke Green Deal Zero Emissie Stadslogistiek.",
+                "tags": [
+                    "duurzaam",
+                    "emissie",
+                    "horeca",
+                    "milieu"
+                ]
+            },
+            {
+                "description": "Een groene onderwijscampus door de Onderwijsboulevard vrij te maken van doorgaand verkeer.",
+                "tags": [
+                    "onderwijs",
+                    "campus",
+                    "verkeer",
+                    "vrij",
+                    "groen",
+                    "milieu"
+                ]
+            },
+            {
+                "description": "De verplaatsing van de P+R aan de Magistratenlaan. Hierdoor verbetert de doorstroming op deze weg sterk.",
+                "tags": [
+                    "magistratenlaan",
+                    "doorstroming",
+                    "milieu",
+                    "volwassenen"
+                ]
+            },
+            {
+                "description": "Het permanent maken van het huidige systeem van transferia waar dit nog nodig is. Dit ongeacht de specifieke locatie.",
+                "tags": [
+                    "trans",
+                    "vervoer",
+                    "locatie",
+                    "mobiliteit",
+                    "vervoer"
+                ]
+            },
+            {
+                "description": "Het ontwikkelen van nieuwe mobiliteitsconcepten in samenwerking met de JADS. Waar mogelijk is onze gemeente hiervoor een proeftuin.",
+                "tags": [
+                    "mobiliteit",
+                    "vervoer",
+                    "JADS"
+                ]
+            },
+            {
+                "description": "Minimaal een verdubbeling van het aantal oplaadpunten in onze gemeente. Dit houdt in dat er deze bestuursperiode minstens 2.000 oplaadpunten bij komen.",
+                "tags": [
+                    "verdubbeling",
+                    "oplaadpunten",
+                    "milieu",
+                    "auto",
+                    "elektrisch"
+                ]
+            },
+            {
+                "description": "Het waar mogelijk aanleggen van nieuwe fietssnelwegen. En de voltooiing van het fietsnetwerk binnen onze gemeente, inclusief de daarvoor benodigde voorzieningen (waaronder fietsenstallingen).",
+                "tags": [
+                    "fiets",
+                    "snelweg",
+                    "vervoer"
+                ]
+            },
+            {
+                "description": "Het verbeteren van de verkeersveiligheid waar dit noodzakelijk is, onder andere bij locaties als scholen en sportaccommodaties. En door gemeente breed een einde te maken aan straat racen. Het reeds ingezette beleid om aan langzaam verkeer voorrang te geven, zetten we voort.",
+                "tags": [
+                    "school",
+                    "sport",
+                    "verkeer",
+                    "veiligheid"
+                ]
+            },
+            {
+                "description": "Een goede bereikbaarheid van plekken als de binnenstad, winkelcentra en het JBZ vanuit verschillende delen in onze gemeente.",
+                "tags": [
+                    "bereikbaar",
+                    "binnenstad",
+                    "winkel",
+                    "JBZ"
+                ]
+            },
+            {
+                "description": "Een efficiënt collectief vervoerssysteem van openbaar vervoer en andere overheids- en particuliere diensten, waaronder buurtbus, ouderenbus, Wmo- en leerlingenvervoer en OV-fietsen. Met dat systeem verbeteren we de bereikbaarheid van de wijken en dorpen. Tevens is hierin oog voor het belang van deze vervoersvormen voor specifieke groepen inwoners, zoals ouderen en jongeren.",
+                "tags": [
+                    "vervoer",
+                    "buurtbus",
+                    "ouderenbus",
+                    "ov"
+                ]
+            },
+            {
+                "description": "Het op termijn realiseren van station Maaspoort indien zich hiervoor nieuwe mogelijkheden aandienen. We onderzoeken de mogelijkheden van een snelle busverbinding tussen de Maaspoort en het centraal station bij een nieuwe concessieverlening.",
+                "tags": [
+                    "station",
+                    "maaspoort",
+                    "verbinding",
+                    "centraal"
+                ]
+            },
+            {
+                "description": "De aanpak van de fileproblematiek op de A2. We blijven actief binnen de integrale verkenning van de A2 Deil-Vught die door het Rijk wordt uitgevoerd.",
+                "tags": [
+                    "file",
+                    "vervoer",
+                    "auto",
+                    "A2",
+                    "deil",
+                    "vught",
+                    "rijk"
+                ]
+            },
+            {
+                "description": "Een goede bereikbaarheid van de oostelijke delen van de gemeente. Het onderzoek naar de realisatie van de Oostelijke Landweg vormt hiervoor een belangrijke bouwsteen.",
+                "tags": [
+                    "bereikbaar",
+                    "oost",
+                    "landweg"
+                ]
+            },
+            {
+                "description": "Het verbeteren van de bereikbaarheid tussen de Brabantse steden in samenwerking met de B5.",
+                "tags": [
+                    "bereikbaar",
+                    "steden",
+                    "verbeteren",
+                    "vervoer"
+                ]
+            },
+            {
+                "description": "Het voortzetten van de lobby tegen de plannen voor de verhoging van het goederenvervoer per spoor. We doen dit samen met andere gemeenten.",
+                "tags": [
+                    "vervoer",
+                    "tegen",
+                    "spoor",
+                    "verhoging"
+                ]
+            }
+        ]
     },
     {
-       "id":9,
-       "title":"Openbare orde en veiligheid",
-       "color": "#e7b76c",
-       "description":"Samenwerken aan een veilige gemeente ’s-Hertogenbosch",
-       "goals":[
-          {
-             "description":"Verbeteren van de veiligheid en de veiligheidsgevoelens. Dit vraagt om maatwerk. En het meer betrekken van inwoners, ondernemers en maatschappelijke organisaties daarbij. Per wijk en dorp stellen we een veiligheids- agenda op.",
-             "tags":[
-                "veiligheid",
-                "verbeteren",
-                "gevoel",
-                "maatwerk",
-                "inwoner",
-                "ondernemer",
-                "wijk"
-             ]
-          },
-          {
-             "description":"Meer zicht op ontwikkelingen door op basis van data science per wijk een wijkfoto te maken.",
-             "tags":[
-                "zicht",
-                "data",
-                "ontwikkeling",
-                "wijk",
-                "wijkfoto"
-             ]
-          },
-          {
-             "description":"Aanpak van ondermijning door te blijven werken volgens de systematiek van de Taskforce Brabant Zeeland.",
-             "tags":[
-                "taskforce",
-                "brabant",
-                "zeeland",
-                "ondermijning"
-             ]
-          },
-          {
-             "description":"Een steviger koppeling tussen het veiligheids- en zorgdomein.",
-             "tags":[
-                "koppeling",
-                "veiligheid",
-                "zorg"
-             ]
-          },
-          {
-             "description":"Het maken van een vuist tegen drugsoverlast en straathandel. We slaan hiervoor de handen ineen met de andere B5 steden.",
-             "tags":[
-                "drugs",
-                "overlast",
-                "tegen"
-             ]
-          },
-          {
-             "description":"Bewustwording van inwoners over de gezondheidsrisico’s van drugsgebruik.",
-             "tags":[
-                "bewust",
-                "drugs",
-                "inwoner",
-                "burger",
-                "bewust",
-                "gebruik"
-             ]
-          },
-          {
-             "description":"Verruiming van het ingezetenencriterium voor personen uit het buitenland die duurzaam in Nederland verblijven. Op vertoon van bijvoorbeeld een zorgverzekeraarspas krijgen ook zij toegang tot de in onze gemeente gevestigde coffeeshops.",
-             "tags":[
-                "duurzaam",
-                "verruiming",
-                "drugs",
-                "buitenland"
-             ]
-          },
-          {
-             "description":"Het in lijn brengen van ons handhavingsregime ten aanzien van coffeeshops met de andere B5 steden.",
-             "tags":[
-                "regime",
-                "handhaving",
-                "drugs",
-                "in lijn"
-             ]
-          },
-          {
-             "description":"Bestrijding en voorkoming van radicalisering en jihadisme. Dit doen we door de samenwerking binnen het netwerk Met Elkaar Bosschenaar voort te zetten.",
-             "tags":[
-                "radicalisering",
-                "jihadisme",
-                "bestrijding",
-                "voorkomen",
-                "Elkaar Bosschenaar"
-             ]
-          },
-          {
-             "description":"Een duidelijk vergunning-, handhavings- en toezichtbeleid. Bijvoorbeeld waar het gaat om terrassen, evenementen en uitstallingen voor winkels.",
-             "tags":[
-                "vergunning",
-                "handhaving",
-                "toezicht",
-                "beleid",
-                "terassen",
-                "evenementen",
-                "horeca",
-                "winkel"
-             ]
-          }
-       ]
+        "id": 9,
+        "title": "Openbare orde en veiligheid",
+        "color": "#e7b76c",
+        "description": "Samenwerken aan een veilige gemeente ’s-Hertogenbosch",
+        "goals": [{
+                "description": "Verbeteren van de veiligheid en de veiligheidsgevoelens. Dit vraagt om maatwerk. En het meer betrekken van inwoners, ondernemers en maatschappelijke organisaties daarbij. Per wijk en dorp stellen we een veiligheids- agenda op.",
+                "tags": [
+                    "veiligheid",
+                    "verbeteren",
+                    "gevoel",
+                    "maatwerk",
+                    "inwoner",
+                    "ondernemer",
+                    "wijk"
+                ]
+            },
+            {
+                "description": "Meer zicht op ontwikkelingen door op basis van data science per wijk een wijkfoto te maken.",
+                "tags": [
+                    "zicht",
+                    "data",
+                    "ontwikkeling",
+                    "wijk",
+                    "wijkfoto"
+                ]
+            },
+            {
+                "description": "Aanpak van ondermijning door te blijven werken volgens de systematiek van de Taskforce Brabant Zeeland.",
+                "tags": [
+                    "taskforce",
+                    "brabant",
+                    "zeeland",
+                    "ondermijning"
+                ]
+            },
+            {
+                "description": "Een steviger koppeling tussen het veiligheids- en zorgdomein.",
+                "tags": [
+                    "koppeling",
+                    "veiligheid",
+                    "zorg"
+                ]
+            },
+            {
+                "description": "Het maken van een vuist tegen drugsoverlast en straathandel. We slaan hiervoor de handen ineen met de andere B5 steden.",
+                "tags": [
+                    "drugs",
+                    "overlast",
+                    "tegen"
+                ]
+            },
+            {
+                "description": "Bewustwording van inwoners over de gezondheidsrisico’s van drugsgebruik.",
+                "tags": [
+                    "bewust",
+                    "drugs",
+                    "inwoner",
+                    "burger",
+                    "bewust",
+                    "gebruik"
+                ]
+            },
+            {
+                "description": "Verruiming van het ingezetenencriterium voor personen uit het buitenland die duurzaam in Nederland verblijven. Op vertoon van bijvoorbeeld een zorgverzekeraarspas krijgen ook zij toegang tot de in onze gemeente gevestigde coffeeshops.",
+                "tags": [
+                    "duurzaam",
+                    "verruiming",
+                    "drugs",
+                    "buitenland"
+                ]
+            },
+            {
+                "description": "Het in lijn brengen van ons handhavingsregime ten aanzien van coffeeshops met de andere B5 steden.",
+                "tags": [
+                    "regime",
+                    "handhaving",
+                    "drugs",
+                    "in lijn"
+                ]
+            },
+            {
+                "description": "Bestrijding en voorkoming van radicalisering en jihadisme. Dit doen we door de samenwerking binnen het netwerk Met Elkaar Bosschenaar voort te zetten.",
+                "tags": [
+                    "radicalisering",
+                    "jihadisme",
+                    "bestrijding",
+                    "voorkomen",
+                    "Elkaar Bosschenaar"
+                ]
+            },
+            {
+                "description": "Een duidelijk vergunning-, handhavings- en toezichtbeleid. Bijvoorbeeld waar het gaat om terrassen, evenementen en uitstallingen voor winkels.",
+                "tags": [
+                    "vergunning",
+                    "handhaving",
+                    "toezicht",
+                    "beleid",
+                    "terassen",
+                    "evenementen",
+                    "horeca",
+                    "winkel"
+                ]
+            }
+        ]
     },
     {
-       "id":10,
-       "title":"Partnership voor doelen",
-       "description":"Samenwerken: we kunnen en willen niet anders!",
-       "color": "#ff670c",
-       "goals":[
-          {
-             "description":"Een Bosch model waarmee we meer recht willen doen aan de betrokkenheid van inwoners. We onderzoeken of en hoe initiatieven als de ideeënmakelaar, G1000, burgerbegroting en hackatons hierin een plek kunnen krijgen. We experimenteren met vernieuwende participatie concepten. Bijvoorbeeld met Cityboost. Dit project geeft jongeren een actieve rol om hun eigen wensen en besluitvorming te realiseren.",
-             "tags":[
-                "betrokken",
-                "bosch",
-                "model",
-                "inwoner",
-                "G1000",
-                "burgerbegroting",
-                "hackaton",
-                "Cityboost",
-                "burger"
-             ]
-          },
-          {
-             "description":"Een verdere invulling aan het Right to Challenge. Hiermee ondersteunen we initiatieven binnen het sociaal domein, stedelijke ontwikkeling, beheer en onderhoud van voorzieningen. En waar mogelijk geven we ruimte aan die initiatieven om blijvend taken van onze gemeente over te nemen.",
-             "tags":[
-                "right",
-                "challenge",
-                "initiatieven",
-                "sociaal",
-                "domein",
-                "stedelijk",
-                "beheer",
-                "onderhoud"
-             ]
-          },
-          {
-             "description":"Meer over de grenzen van onze gemeente heen kijken. Voor de instandhouding van verschillende regionale voorzieningen is meer wisselwerking met de regio nodig.",
-             "tags":[
-                "grenzen",
-                "gemeente",
-                "wisselwerking",
-                "voorziening"
-             ]
-          },
-          {
-             "description":"Het blijven nemen van onze verantwoordelijkheid als centrumgemeente binnen de regio Noordoost-Brabant. Ook richting bovenregionale overleggen waar kleinere regiogemeenten niet aan deelnemen. Ook blijven we als centrumgemeente een bijdrage leveren aan de samenwerking binnen Agrifood Capital. Dit met als doel om de regio steviger op de kaart te zetten met deze sector.",
-             "tags":[
-                "centrum",
-                "brabant",
-                "gemeente",
-                "agrifood",
-                "capital"
-             ]
-          },
-          {
-             "description":"Regionale samenwerking op de schaal waar we onze maatschappelijke doelen het effectiefst kunnen bereiken. Daarbij kijken we in het bijzonder naar de samenwerking met Oss, de Meierij, Bommelerwaard en richting Langstraat. En leggen de verbinding met BrabantStad.",
-             "tags":[
-                "regionaal",
-                "samenwerking",
-                "maatschappelijk",
-                "oss",
-                "meierij",
-                "bommelerwaard",
-                "langstraat",
-                "doelen",
-                "brabant"
-             ]
-          },
-          {
-             "description":"Samenwerking met omliggende gemeenten op specialistische terreinen. Dit is nodig in een tijd waarin de taken voor de lokale overheid steeds complexer worden. Met die samenwerking is het mogelijk kennis en kunde te delen.",
-             "tags":[
-                "samenwerking",
-                "gemeente",
-                "speciaal"
-             ]
-          },
-          {
-             "description":"Het actief deel blijven nemen aan de samenwerking in BrabantStad verband. En het samen optrekken richting Den Haag en Brussel rond opgaven waarmee wij allemaal te maken hebben.",
-             "tags":[
-                "samenwerking",
-                "brabant",
-                "stad",
-                "verband",
-                "den haag",
-                "brussel"
-             ]
-          }
-       ]
+        "id": 10,
+        "title": "Partnership voor doelen",
+        "description": "Samenwerken: we kunnen en willen niet anders!",
+        "color": "#ff670c",
+        "goals": [{
+                "description": "Een Bosch model waarmee we meer recht willen doen aan de betrokkenheid van inwoners. We onderzoeken of en hoe initiatieven als de ideeënmakelaar, G1000, burgerbegroting en hackatons hierin een plek kunnen krijgen. We experimenteren met vernieuwende participatie concepten. Bijvoorbeeld met Cityboost. Dit project geeft jongeren een actieve rol om hun eigen wensen en besluitvorming te realiseren.",
+                "tags": [
+                    "betrokken",
+                    "bosch",
+                    "model",
+                    "inwoner",
+                    "G1000",
+                    "burgerbegroting",
+                    "hackaton",
+                    "Cityboost",
+                    "burger"
+                ]
+            },
+            {
+                "description": "Een verdere invulling aan het Right to Challenge. Hiermee ondersteunen we initiatieven binnen het sociaal domein, stedelijke ontwikkeling, beheer en onderhoud van voorzieningen. En waar mogelijk geven we ruimte aan die initiatieven om blijvend taken van onze gemeente over te nemen.",
+                "tags": [
+                    "right",
+                    "challenge",
+                    "initiatieven",
+                    "sociaal",
+                    "domein",
+                    "stedelijk",
+                    "beheer",
+                    "onderhoud"
+                ]
+            },
+            {
+                "description": "Meer over de grenzen van onze gemeente heen kijken. Voor de instandhouding van verschillende regionale voorzieningen is meer wisselwerking met de regio nodig.",
+                "tags": [
+                    "grenzen",
+                    "gemeente",
+                    "wisselwerking",
+                    "voorziening"
+                ]
+            },
+            {
+                "description": "Het blijven nemen van onze verantwoordelijkheid als centrumgemeente binnen de regio Noordoost-Brabant. Ook richting bovenregionale overleggen waar kleinere regiogemeenten niet aan deelnemen. Ook blijven we als centrumgemeente een bijdrage leveren aan de samenwerking binnen Agrifood Capital. Dit met als doel om de regio steviger op de kaart te zetten met deze sector.",
+                "tags": [
+                    "centrum",
+                    "brabant",
+                    "gemeente",
+                    "agrifood",
+                    "capital"
+                ]
+            },
+            {
+                "description": "Regionale samenwerking op de schaal waar we onze maatschappelijke doelen het effectiefst kunnen bereiken. Daarbij kijken we in het bijzonder naar de samenwerking met Oss, de Meierij, Bommelerwaard en richting Langstraat. En leggen de verbinding met BrabantStad.",
+                "tags": [
+                    "regionaal",
+                    "samenwerking",
+                    "maatschappelijk",
+                    "oss",
+                    "meierij",
+                    "bommelerwaard",
+                    "langstraat",
+                    "doelen",
+                    "brabant"
+                ]
+            },
+            {
+                "description": "Samenwerking met omliggende gemeenten op specialistische terreinen. Dit is nodig in een tijd waarin de taken voor de lokale overheid steeds complexer worden. Met die samenwerking is het mogelijk kennis en kunde te delen.",
+                "tags": [
+                    "samenwerking",
+                    "gemeente",
+                    "speciaal"
+                ]
+            },
+            {
+                "description": "Het actief deel blijven nemen aan de samenwerking in BrabantStad verband. En het samen optrekken richting Den Haag en Brussel rond opgaven waarmee wij allemaal te maken hebben.",
+                "tags": [
+                    "samenwerking",
+                    "brabant",
+                    "stad",
+                    "verband",
+                    "den haag",
+                    "brussel"
+                ]
+            }
+        ]
     },
     {
-       "id":11,
-       "title":"Financiën",
-       "description":"Het gemeentelijke huishoudboekje blijvend op orde",
-       "color": "#b8acf7",
-       "goals":[
-          {
-             "description":"We gaan uit van een sluitende (meer)jaren begroting. Zo behouden we de gezonde financiële basis van onze gemeente. We voeren een degelijk financieel beheer met voldoende buffer om risico’s op te vangen. De normering van de algemene reserve bedraagt 15% van de algemene uitkering.",
-             "tags":[
-                "begroting",
-                "financieel",
-                "gemeente",
-                "reserve"
-             ]
-          },
-          {
-             "description":"De instrumenten om de begroting sluitend te houden, zijn in volgorde: ‘nieuw voor oud’ ombuiging, verhoging van effectiviteit en efficiency.",
-             "tags":[
-                "begroting",
-                "financieel"
-             ]
-          },
-          {
-             "description":"Screenen van de reserves en voorzieningen vindt jaarlijks plaats.",
-             "tags":[
-                "financieel"
-             ]
-          },
-          {
-             "description":"Jaarlijks wordt bij de begroting integraal afgewogen of oud beleid afgeraamd kan worden. Wij blijven kritisch staan tegen continuering van uitgaven.",
-             "tags":[
-                "begroting"
-             ]
-          },
-          {
-             "description":"De woonlasten worden niet verhoogd anders dan met een inflatiecorrectie.",
-             "tags":[
-                "woonlasten",
-                "verhoogd",
-                "inflatie"
-             ]
-          },
-          {
-             "description":"Het ozb tarief voor ondernemers wordt de komende jaren niet verhoogd anders dan met een inflatiecorrectie.",
-             "tags":[
-                "tarief",
-                "ozb",
-                "verhoogd",
-                "inflatie"
-             ]
-          },
-          {
-             "description":"Wij passen de tarievenstructuur voor parkeren aan. Dit betreft onder andere de parkeergarages binnen de historische driehoek. Deze brengen we in lijn met de autoluwe binnenstad.",
-             "tags":[
-                "parkeren",
-                "geld",
-                "tarief",
-                "garage"
-             ]
-          }
-       ]
+        "id": 11,
+        "title": "Financiën",
+        "description": "Het gemeentelijke huishoudboekje blijvend op orde",
+        "color": "#b8acf7",
+        "goals": [{
+                "description": "We gaan uit van een sluitende (meer)jaren begroting. Zo behouden we de gezonde financiële basis van onze gemeente. We voeren een degelijk financieel beheer met voldoende buffer om risico’s op te vangen. De normering van de algemene reserve bedraagt 15% van de algemene uitkering.",
+                "tags": [
+                    "begroting",
+                    "financieel",
+                    "gemeente",
+                    "reserve"
+                ]
+            },
+            {
+                "description": "De instrumenten om de begroting sluitend te houden, zijn in volgorde: ‘nieuw voor oud’ ombuiging, verhoging van effectiviteit en efficiency.",
+                "tags": [
+                    "begroting",
+                    "financieel"
+                ]
+            },
+            {
+                "description": "Screenen van de reserves en voorzieningen vindt jaarlijks plaats.",
+                "tags": [
+                    "financieel"
+                ]
+            },
+            {
+                "description": "Jaarlijks wordt bij de begroting integraal afgewogen of oud beleid afgeraamd kan worden. Wij blijven kritisch staan tegen continuering van uitgaven.",
+                "tags": [
+                    "begroting"
+                ]
+            },
+            {
+                "description": "De woonlasten worden niet verhoogd anders dan met een inflatiecorrectie.",
+                "tags": [
+                    "woonlasten",
+                    "verhoogd",
+                    "inflatie"
+                ]
+            },
+            {
+                "description": "Het ozb tarief voor ondernemers wordt de komende jaren niet verhoogd anders dan met een inflatiecorrectie.",
+                "tags": [
+                    "tarief",
+                    "ozb",
+                    "verhoogd",
+                    "inflatie"
+                ]
+            },
+            {
+                "description": "Wij passen de tarievenstructuur voor parkeren aan. Dit betreft onder andere de parkeergarages binnen de historische driehoek. Deze brengen we in lijn met de autoluwe binnenstad.",
+                "tags": [
+                    "parkeren",
+                    "geld",
+                    "tarief",
+                    "garage"
+                ]
+            }
+        ]
     }
- ]
+]
