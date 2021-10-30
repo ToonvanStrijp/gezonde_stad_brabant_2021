@@ -7,11 +7,6 @@ import Button from '@mui/material/Button';
 
 import "./Questionnaire.css";
 
-const tags = new Map<string, number>();
-
-// Mapping the data to a map of <tag, importance>
-data.map((d) => d.goals.map((g) => g.tags.map((t) => tags.set(t, 0))));
-
 const wijken = [
   "Binnenstad", "De Groote Wielen", "Empel", "Engelen", "Graafsepoort", "Maaspoort", "Muntel / Vliert", "Noord", "Nuland", "Rosmalen Noord", "Rosmalen Zuid", "Vinkel", "West", "Zuidoost"
 ]
@@ -42,28 +37,28 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
   }
 
   useEffect(() => {
-    // The first time we select a wijk we only want to increase the count
-    if(selectedWijk === "")
-    {
-      const value = tags.get(selectedWijk.toLowerCase());
+    // // The first time we select a wijk we only want to increase the count
+    // if(selectedWijk === "")
+    // {
+    //   const value = tags.get(selectedWijk.toLowerCase());
 
-      if(value !== undefined)
-        tags.set(selectedWijk.toLowerCase(), value + 1);
-    }
-    else
-    {
-      const previousValue = tags.get(previousSelectedWijk.toLowerCase());
-      const value = tags.get(selectedWijk.toLowerCase());
+    //   if(value !== undefined)
+    //     tags.set(selectedWijk.toLowerCase(), value + 1);
+    // }
+    // else
+    // {
+    //   const previousValue = tags.get(previousSelectedWijk.toLowerCase());
+    //   const value = tags.get(selectedWijk.toLowerCase());
 
-      if(previousValue !== undefined)
-        tags.set(previousSelectedWijk.toLowerCase(), previousValue -1);
+    //   if(previousValue !== undefined)
+    //     tags.set(previousSelectedWijk.toLowerCase(), previousValue -1);
 
-      if(value !== undefined)
-        tags.set(selectedWijk.toLowerCase(), value + 1);
-    }
+    //   if(value !== undefined)
+    //     tags.set(selectedWijk.toLowerCase(), value + 1);
+    // }
     
-    // Otherwise we want to decrease the count for the previous wijk and increase it for the current
-    console.log(previousSelectedWijk, selectedWijk  );
+    // // Otherwise we want to decrease the count for the previous wijk and increase it for the current
+    // console.log(previousSelectedWijk, selectedWijk  );
   }, [selectedWijk])
 
   return (
