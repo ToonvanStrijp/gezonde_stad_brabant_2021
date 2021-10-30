@@ -121,6 +121,9 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
       </div>
 
       <Button onClick={() => {
+        setTags(tags => {
+          return [...tags, "zorg"];
+        });
       }} variant="contained">set tags</Button>
     </div>
   );
