@@ -27,6 +27,7 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
     if(tags.length <= 0) return;
     setLoading(true);
     setTimeout(() => {
+      
       setLoading(false);
     }, 2000);
   }, [tags, setLoading])
