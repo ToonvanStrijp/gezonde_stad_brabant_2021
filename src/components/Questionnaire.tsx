@@ -8,6 +8,10 @@ const wijken = [
   "Binnenstad", "De Groote Wielen", "Empel", "Engelen", "Graafsepoort", "Maaspoort", "Muntel / Vliert", "Noord", "Nuland", "Rosmalen Noord", "Rosmalen Zuid", "Vinkel", "West", "Zuidoost"
 ]
 
+const doelgroepen = [
+  "Kinderen", "Jongeren", "Adolescente", "Volwassenen", "Bejaarden", "Ouderen", 
+]
+
 export default function Questionnare() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -28,7 +32,16 @@ export default function Questionnare() {
 
       <div className={currentQuestion === 1 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(1)}>
         <span className="Title">Wat zijn de doelgroepen?</span>
-        <TextField label="Outlined" variant="outlined" />
+        <Autocomplete
+          multiple
+            options={doelgroepen}
+            renderInput={(params) => (
+              <TextField
+                {...params}
+                label="Doelgroepen"
+              />
+            )}
+          />
       </div>
 
       <div className={currentQuestion === 2 ? "Question Active-question" : "Question"} onFocus={() => setCurrentQuestion(2)}>
