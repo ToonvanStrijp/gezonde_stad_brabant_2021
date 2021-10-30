@@ -171,10 +171,10 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ setTags }) => {
       setTags((t) => {
         const index = t.indexOf(previousSelectedWijk);
         if (index !== -1) {
-          t.splice(index, 1);
+          return [...t.splice(index, 1)];
         }
         t.push(selectedWijk);
-        return t;
+        return [...t];
       });
     }
   }, [selectedWijk]);
