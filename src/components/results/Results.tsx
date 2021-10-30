@@ -1,30 +1,64 @@
 import { Category } from "../../models/category";
 import data from "../../data/gemeenteAkkoord.json";
 
-import { Chip, Paper } from "@mui/material";
+import { Box, Chip, Paper, Skeleton, Typography } from "@mui/material";
 import "./Results.css";
 import { Goal } from "../../models/goal";
+import LinearProgress from '@mui/material/LinearProgress';
+import { useEffect, useState } from "react";
 
-type GoalWithColor = Goal & { color: string };
+type GoalExtended = Goal & { color: string, category: Category };
 
 const categories: Category[] = data;
-const goals: GoalWithColor[] = categories.reduce<GoalWithColor[]>((result, category) => {
-  const data = category.goals.map(g => ({...g, color: category.color}));
+const goals: GoalExtended[] = categories.reduce<GoalExtended[]>((result, category) => {
+  const data = category.goals.map(g => ({...g, color: category.color, category}));
   result.push(...data);
   return result;
 }, [])
 
-export default function Results() {
+type ResultsProps = {
+  tags: string[];
+}
+
+const Results: React.FC<ResultsProps> = ({tags}) => {
+  const [loading, setLoading] = useState(false);
+  
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, [tags, setLoading])
+
+
+  const LoadingItems = () => {
+    return Array(5).fill('').map((value, index) => (
+      <Paper 
+            className="Item"
+            elevation={3}>
+        <Box key={index} sx={{ width: 300 }}>
+          <Skeleton sx={{width: 100}} />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+        </Box>
+      </Paper>
+    ));
+  }
+
   return (
     <div className="Results">
       <div className="Title">
         <h1>RESULTATEN</h1>
+        {loading && (<LinearProgress className="Progress" />)}
       </div>
-      <div style={{paddingLeft: '20px', paddingRight: '20px'}} >
-        {goals.map(goal => 
+      <div style={{paddingLeft: '20px', paddingRight: '20px'}}>
+        {loading && LoadingItems()}
+        {!loading && goals.map(goal => 
           (<Paper 
-            style={{boxSizing: 'border-box', width: '100%', marginBottom: '10px', marginTop: '20px', marginLeft: 'auto', marginRight: 'auto', padding: '20px'}} 
+            className="Item"
             elevation={3}>
+              <Typography variant="h5">{goal.category.title}</Typography>
               {goal.description}
               <br/>
               {goal.tags.map(tag => (<Chip label={tag} style={{marginTop: '10px', color: 'white', marginLeft: '5px', backgroundColor: goal.color}} />))}
@@ -34,3 +68,5 @@ export default function Results() {
     </div>
   );
 }
+
+export default Results;

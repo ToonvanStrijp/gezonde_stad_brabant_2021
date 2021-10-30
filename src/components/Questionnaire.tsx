@@ -1,6 +1,7 @@
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { useState } from "react";
+import Button from '@mui/material/Button';
 
 import "./Questionnaire.css";
 
@@ -16,7 +17,11 @@ const maatschappelijkeDoelen = [
   "Economie en arbeidsmarkt", "Talentontwikkeling", "Sociale kwaliteit", "Gezondheid en vitaliteit", "Cultuur en sport", "Energie & klimaatadaptie", "Leven en wonen", "Verkeer en mobiliteit", "Openbare orde en veiligheid", "Partnership voor doelen", "Financiën"
 ]
 
-export default function Questionnare() {
+type QuestionnaireProps = {
+  setTags: (tags: string[]) => void;
+}
+
+const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   return (
@@ -66,6 +71,12 @@ export default function Questionnare() {
         <span className="Title">Wat is de omschrijving van het project?</span>
         <TextField multiline rows={4} label="Outlined" variant="outlined" />
       </div>
+
+      <Button onClick={() => {
+        setTags(["rosmalen"])
+      }} variant="contained">set tags</Button>
     </div>
   );
 }
+
+export default Questionnaire;
