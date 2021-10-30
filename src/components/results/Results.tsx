@@ -24,6 +24,7 @@ const Results: React.FC<ResultsProps> = ({tags}) => {
   const [loading, setLoading] = useState(false);
   
   useEffect(() => {
+    if(tags.length <= 0) return;
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
