@@ -1,6 +1,6 @@
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import { useState } from "react";
+import React, { useState } from "react";
 import Button from '@mui/material/Button';
 
 import "./Questionnaire.css";
@@ -18,7 +18,7 @@ const maatschappelijkeDoelen = [
 ]
 
 type QuestionnaireProps = {
-  setTags: React.Dispatch<string[]>;
+  setTags: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
 const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
@@ -73,7 +73,6 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({setTags}) => {
       </div>
 
       <Button onClick={() => {
-        setTags(["rosmalen"])
       }} variant="contained">set tags</Button>
     </div>
   );
